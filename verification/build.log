@@ -1,0 +1,12 @@
+Working directory lean
+Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+$ lake build SparseBoundary
+Build completed successfully (149 jobs).
+$ lake env lean ../verification/Audit.lean
+PASS exit=0. Full output in axioms-graph.log
+Working directory lean-eg
+Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+$ lake build BoundaryCorollaries
+Build completed successfully (1421 jobs).
+$ lake env lean ../verification/AuditEG.lean
+PASS exit=0. Full output in axioms-main.log

@@ -1,0 +1,889 @@
+Primary project kernel replay
+Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+UTC start 2026-11-19T11:45:46.035592+00:00
+Roots SparseBoundary
+Local import closure: 147 modules
+Reused 147 prior checks with matching source, object, and local import closure.
+[1/147] lean --stdin: replayFromImports SparseBoundary
+source sha256 e9e1d20e2c79fcb8eb511b7b11174a3b19c730a70a9987d8c9bd0bbf44879aac
+olean  sha256 54391676d3104dcf4178cf529b2bb1f632ee47f0da9a1c80f7493147550f148a
+started UTC 2026-11-19T09:50:25.118006+00:00
+PASS SparseBoundary exit=0 elapsed=0.88s
+[2/147] leanchecker -v SparseBoundary.Boundary
+source sha256 f54387c6cfeda8497e96058be9d8ed1b3b8b4b7cbf17de00ffc96038d57d5e57
+olean  sha256 14ce12a677216e79798358d2c2d1314862177341a5614ac7b95df90941c1391c
+started UTC 2026-11-19T08:41:51.306454+00:00
+replaying SparseBoundary.Boundary
+PASS SparseBoundary.Boundary exit=0 elapsed=0.79s
+[3/147] leanchecker -v SparseBoundary.BranchDegree
+source sha256 73f9854e548e9b223976a4358d69b94b23ace43a57570805705fbe7bec7ee576
+olean  sha256 750b960421819cddf23fa6d53447cb0347e95ab21a5d1eee5e1a5aeab1d698f6
+started UTC 2026-11-19T08:41:52.094623+00:00
+replaying SparseBoundary.BranchDegree
+PASS SparseBoundary.BranchDegree exit=0 elapsed=0.84s
+[4/147] leanchecker -v SparseBoundary.Cut
+source sha256 e372b03bdcb5b0c3ddb4cc1a75e11927d485dafaccc0ef2d1c4d125a283ee489
+olean  sha256 498e94d141a73b1edb08a37b1462c4301e8835038fadf9d9bd0201a32443f31a
+started UTC 2026-11-19T08:41:52.937644+00:00
+replaying SparseBoundary.Cut
+PASS SparseBoundary.Cut exit=0 elapsed=0.83s
+[5/147] leanchecker -v SparseBoundary.ExactSeven
+source sha256 91a6a65289df0287aaafc17168dff6822b8961266dc7a36369d78d41684f1cf8
+olean  sha256 e546cf1dfba9a028db5608b14f14396b53b879d7094cc80ed71bd2c8888c69db
+started UTC 2026-11-19T08:41:53.764824+00:00
+replaying SparseBoundary.ExactSeven
+PASS SparseBoundary.ExactSeven exit=0 elapsed=1.24s
+[6/147] leanchecker -v SparseBoundary.ExactSmall
+source sha256 d4927c67cfe77287dd798014b3bda174adcf4778e1bfa3decc52bc32d158bbf3
+olean  sha256 50e48cddebeb3b6c66bfee04738adcb7b23fc50b987927c653f41ad9a284d9c2
+started UTC 2026-11-19T08:41:55.002595+00:00
+replaying SparseBoundary.ExactSmall
+PASS SparseBoundary.ExactSmall exit=0 elapsed=1.19s
+[7/147] leanchecker -v SparseBoundary.Fan
+source sha256 12fb347fc16a172a74c8ecdcac313bd23e4f2cd241e1f965ea0da0c7ee5cd550
+olean  sha256 47f2433d2f7eccbc09b21964262a3bf229c5273878a77a37b2c600be72b4ed73
+started UTC 2026-11-19T08:41:56.198488+00:00
+replaying SparseBoundary.Fan
+PASS SparseBoundary.Fan exit=0 elapsed=1.95s
+[8/147] leanchecker -v SparseBoundary.FanCone
+source sha256 ac80bd8ca72524496529e0ac73a4693e3b2e4396527ce7cb07cc160265264a14
+olean  sha256 aa43ab4a9c378927901527aa18a830b4ec449ff8cd43b9ac76fd466a3e446001
+started UTC 2026-11-19T08:41:58.150235+00:00
+replaying SparseBoundary.FanCone
+PASS SparseBoundary.FanCone exit=0 elapsed=2.77s
+[9/147] leanchecker -v SparseBoundary.FanEightThree
+source sha256 664fd827f97253a7c19d02f097f96e11637f8217d1b8b36b0a3d5e85520fc030
+olean  sha256 5d9330dd85e412301a8253f800686c533f2d68253f8c0b3f3dcfdb019daae710
+started UTC 2026-11-19T08:42:00.925237+00:00
+replaying SparseBoundary.FanEightThree
+PASS SparseBoundary.FanEightThree exit=0 elapsed=5.31s
+[10/147] leanchecker -v SparseBoundary.FanExpansion
+source sha256 69f275405b4a2e5b831202c72ba7d2a834842ac7ce232d562800be2f445a7c9f
+olean  sha256 5979f0719c70d1c4eb14969c64ead04e16c1506445f70e17ac250cbed8e45780
+started UTC 2026-11-19T08:42:06.232244+00:00
+replaying SparseBoundary.FanExpansion
+PASS SparseBoundary.FanExpansion exit=0 elapsed=0.78s
+[11/147] leanchecker -v SparseBoundary.FanGraphic
+source sha256 fa054659ef6cfa7cc38b4695ebc84cfe027c40106585e03182660b636eadb7ea
+olean  sha256 f32e9b776018176869059c11f7f8fdca57746b68c9bbbc437f3dbafcdc7362d8
+started UTC 2026-11-19T08:42:07.018635+00:00
+replaying SparseBoundary.FanGraphic
+PASS SparseBoundary.FanGraphic exit=0 elapsed=1.29s
+[12/147] leanchecker -v SparseBoundary.FanGraphicNecessity
+source sha256 d5121b19ae4f48c488bf40acb01abd115b3cbc1771fdc4602ae1f9e65479e242
+olean  sha256 9f0f11a2eec9236949bd6914a20e958bb5be65a12e314bc96ced049059c7292b
+started UTC 2026-11-19T08:42:08.313283+00:00
+replaying SparseBoundary.FanGraphicNecessity
+PASS SparseBoundary.FanGraphicNecessity exit=0 elapsed=0.79s
+[13/147] leanchecker -v SparseBoundary.FanInduction
+source sha256 33c790d87178eb4eecbc17731accb79d410a6425598819c7f33990a47d883cf4
+olean  sha256 7e502c72aca69e5f837e6cc984522fe6004f42b22d7d5d3b6e82bb3998f470fd
+started UTC 2026-11-19T08:42:09.105053+00:00
+replaying SparseBoundary.FanInduction
+PASS SparseBoundary.FanInduction exit=0 elapsed=0.96s
+[14/147] leanchecker -v SparseBoundary.FanLargePositive
+source sha256 bd935df85d1cdf6e29734ce963ff81272dddf5081dcee0c0ca16142bc2a562c3
+olean  sha256 10991b826dbd57674203802993c622263a964d0d075bd1ae04705d384f32f439
+started UTC 2026-11-19T09:50:26.000624+00:00
+replaying SparseBoundary.FanLargePositive
+PASS SparseBoundary.FanLargePositive exit=0 elapsed=0.72s
+[15/147] leanchecker -v SparseBoundary.FanLoops
+source sha256 0b83d7bf08b0c660cd2874f71c8788e3df05c69545e1f05d2a6919f036c440f2
+olean  sha256 786c30efbf33c808a4c8f16dffe9c8ea63fcc800a843092b891524b80835e238
+started UTC 2026-11-19T08:42:11.170497+00:00
+replaying SparseBoundary.FanLoops
+PASS SparseBoundary.FanLoops exit=0 elapsed=0.82s
+[16/147] leanchecker -v SparseBoundary.FanOuter
+source sha256 9f4fa0465f1ba85e86fa674e2b0d16d4ac2a6a2a681403d115a3d227e780379e
+olean  sha256 689b760a93268e000157241795d5233c63b7fc85356fb911d3fc2c3de6e96387
+started UTC 2026-11-19T08:42:11.992359+00:00
+replaying SparseBoundary.FanOuter
+PASS SparseBoundary.FanOuter exit=0 elapsed=1.14s
+[17/147] leanchecker -v SparseBoundary.FanPlanar
+source sha256 0356161b9c6741f95a03dc5f0379b2bf697ca937f6027191f8b8ad7fd24c96df
+olean  sha256 ef10099272819a8d2cb9e1602e9f867e85df90312f7475e47e5ca2acac191906
+started UTC 2026-11-19T08:42:13.136704+00:00
+replaying SparseBoundary.FanPlanar
+PASS SparseBoundary.FanPlanar exit=0 elapsed=3.01s
+[18/147] leanchecker -v SparseBoundary.FanPromote
+source sha256 5a5befb2436f229e285e462b2a9d07311722722c79ea3fac09cae7f16e4f0dc1
+olean  sha256 835fc93bd40cc73c75ecd075785ccbcd30d26ee84b3323c7e55fbf0718572749
+started UTC 2026-11-19T08:42:16.143914+00:00
+replaying SparseBoundary.FanPromote
+PASS SparseBoundary.FanPromote exit=0 elapsed=0.80s
+[19/147] leanchecker -v SparseBoundary.FanRealization
+source sha256 a7c96b256402d382cb540f3abf5567d001747a27b42f0ec7c6acc144ee17b23c
+olean  sha256 0c9a63871084261eb90a4737243a3fb5ff60cf0191f981b52b4f1abdf9df507b
+started UTC 2026-11-19T08:42:16.948264+00:00
+replaying SparseBoundary.FanRealization
+PASS SparseBoundary.FanRealization exit=0 elapsed=1.18s
+[20/147] leanchecker -v SparseBoundary.FanSevenTable
+source sha256 237fdc4482b9aad0e8f49dcb33e9d8f76a3e8f791691adab1b3bc228be3b495a
+olean  sha256 0a8e3ac523cfe608ec9e512b1bf143745a704cc8c856c8f7826d696debc1b15d
+started UTC 2026-11-19T08:42:18.125884+00:00
+replaying SparseBoundary.FanSevenTable
+PASS SparseBoundary.FanSevenTable exit=0 elapsed=3.01s
+[21/147] leanchecker -v SparseBoundary.FanShell
+source sha256 5e0076d945010bec3ab5b641b32acadde333ffb55e206075457da39c53f69e6e
+olean  sha256 a82701a3c1d736bc86c3ce584d58d1221743ffc23a38909ec4c38f464bcf4dfb
+started UTC 2026-11-19T08:42:21.136353+00:00
+replaying SparseBoundary.FanShell
+PASS SparseBoundary.FanShell exit=0 elapsed=0.78s
+[22/147] leanchecker -v SparseBoundary.FanSingleThree
+source sha256 fd7273473ba955e27c10e539b1bc94ffc9730e481e68e7aac58a2d86065de5f6
+olean  sha256 3babfc7e64fd4fea75d4d6c20af45f6406993d0eeedf0645d0d45cb4fa1bcd8d
+started UTC 2026-11-19T08:42:21.914326+00:00
+replaying SparseBoundary.FanSingleThree
+PASS SparseBoundary.FanSingleThree exit=0 elapsed=2.41s
+[23/147] leanchecker -v SparseBoundary.FanSpokes
+source sha256 35bfd14a3dc0999c888c3d450ea3f68f3c7d61f8fe2a67133701bb4f3e29bf85
+olean  sha256 6868444e7bd19276e438eafc68debd05ad17461b2791202e53fc7c64228bc2a7
+started UTC 2026-11-19T08:42:24.323371+00:00
+replaying SparseBoundary.FanSpokes
+PASS SparseBoundary.FanSpokes exit=0 elapsed=0.77s
+[24/147] leanchecker -v SparseBoundary.FanTerminal
+source sha256 097587210529af55f66c70ba637afa8d4e7dbf9cb490814b5675f40ae4a9e661
+olean  sha256 b5d7918dd84e5720a09c3d2654bb75c0ad07342ddefb6a255327b98da947131e
+started UTC 2026-11-19T08:42:25.091190+00:00
+replaying SparseBoundary.FanTerminal
+PASS SparseBoundary.FanTerminal exit=0 elapsed=1.32s
+[25/147] leanchecker -v SparseBoundary.FanThreeReduction
+source sha256 95991d3964f7bfcbc9682ebe6acb31f8a0aa1980b072db162482d61dfefe1370
+olean  sha256 71f3a5ce3bea2b191a48413d6b8cea4b296e3e460c798e463b5a9893f36cfbdd
+started UTC 2026-11-19T08:42:26.411359+00:00
+replaying SparseBoundary.FanThreeReduction
+PASS SparseBoundary.FanThreeReduction exit=0 elapsed=1.01s
+[26/147] leanchecker -v SparseBoundary.FanUniversal
+source sha256 08e8c8e6cccd3e155fb9d9934a0cb53f6c2449837d07ef466d4567bd11ee951e
+olean  sha256 02dd6d813538f88e05b79d5194e4949845ca24ab7eb8bd5e43f1d470e3b9df80
+started UTC 2026-11-19T08:42:27.425294+00:00
+replaying SparseBoundary.FanUniversal
+PASS SparseBoundary.FanUniversal exit=0 elapsed=3.54s
+[27/147] leanchecker -v SparseBoundary.FanUpperHigh
+source sha256 37c4e80404d973536fe56d980bd6627afd011e1be1022c9635a968a1b217b54b
+olean  sha256 a4d464896db3aeaf9b9b37100b0fa1405dc5a5f90e84a66e411f2a44c789011b
+started UTC 2026-11-19T08:42:30.968067+00:00
+replaying SparseBoundary.FanUpperHigh
+PASS SparseBoundary.FanUpperHigh exit=0 elapsed=0.96s
+[28/147] leanchecker -v SparseBoundary.FanWeights
+source sha256 c6baeff4919ee55d3226d2b07de8da8f79908c07f0dab370e574b4422cd88877
+olean  sha256 03aae2fee75d153530d8b00ce74b19188f6a82e8d30587b8d844cec5be7fc931
+started UTC 2026-11-19T08:42:31.930127+00:00
+replaying SparseBoundary.FanWeights
+PASS SparseBoundary.FanWeights exit=0 elapsed=0.96s
+[29/147] leanchecker -v SparseBoundary.FanZeroTwo
+source sha256 6851bb2ff7a804a50d0f7e087a1048deb6db9be2a1af272bf94c1d268cc1d8a2
+olean  sha256 82298edcf726477bf087df18b49b0e1e1db332a45431b330df5ddef28e097789
+started UTC 2026-11-19T08:42:32.889450+00:00
+replaying SparseBoundary.FanZeroTwo
+PASS SparseBoundary.FanZeroTwo exit=0 elapsed=0.94s
+[30/147] leanchecker -v SparseBoundary.FiniteRepairs
+source sha256 edc2093d1394016fa20c8b1119187858dd533f4199947bbbbc6e7f09f4ce0a48
+olean  sha256 ba5708511ebc3b2eef50830f7ab2b2978718f709097d7f669844946b29bb0d07
+started UTC 2026-11-19T08:42:33.827176+00:00
+replaying SparseBoundary.FiniteRepairs
+PASS SparseBoundary.FiniteRepairs exit=0 elapsed=0.78s
+[31/147] leanchecker -v SparseBoundary.FiveSparse
+source sha256 0f49c30b33e7ec2b23ea8edbc44b6fa5ae7a67969ef49c9bb5b9887e2afda663
+olean  sha256 8641fbf043d524927641a62cca1e220cec4a65caf02be48bf4178c8b1feb8138
+started UTC 2026-11-19T08:42:34.605148+00:00
+replaying SparseBoundary.FiveSparse
+PASS SparseBoundary.FiveSparse exit=0 elapsed=1.38s
+[32/147] leanchecker -v SparseBoundary.FourSingleton
+source sha256 e18a944a6b0b190905c565b3df16128bf835cbd2f7c1c0206b262b24e211c00a
+olean  sha256 2bfb2489194991a0704387896041a894c6db926b2df9bb92ab83e5139953c076
+started UTC 2026-11-19T08:42:35.990453+00:00
+replaying SparseBoundary.FourSingleton
+PASS SparseBoundary.FourSingleton exit=0 elapsed=1.16s
+[33/147] leanchecker -v SparseBoundary.Graph
+source sha256 d894577aee2f474e73dccbc341a7cb0bc458350c8273b4d6c17aad884f347e08
+olean  sha256 159d4a53d2aaceb6760bd3e371d8877ff0b6a902056f6ae75af58ba7ab9780fe
+started UTC 2026-11-19T08:42:37.150523+00:00
+replaying SparseBoundary.Graph
+PASS SparseBoundary.Graph exit=0 elapsed=0.81s
+[34/147] leanchecker -v SparseBoundary.GraphCliqueSum
+source sha256 3db9bdafcf3adb5678dd25ccf7d374d7ae2bcf534d4e511d57627ae5f00d48d7
+olean  sha256 0555ebd12f745f6b8cab1b0a4a838b908236740b1d8256351eaa13af1ae32511
+started UTC 2026-11-19T08:42:37.957559+00:00
+replaying SparseBoundary.GraphCliqueSum
+PASS SparseBoundary.GraphCliqueSum exit=0 elapsed=1.52s
+[35/147] leanchecker -v SparseBoundary.GraphCone
+source sha256 4a18cd412d9999fd8f1b8db1545603e396306ae11a98c566dadcd8c764c517d6
+olean  sha256 771b313de8c46dddcf317e907c015f27c78e2d361cb79620b6cede72fc1ee202
+started UTC 2026-11-19T08:42:39.479737+00:00
+replaying SparseBoundary.GraphCone
+PASS SparseBoundary.GraphCone exit=0 elapsed=0.79s
+[36/147] leanchecker -v SparseBoundary.GraphContractionCheck
+source sha256 a7901cc14fa21e5c354658fa6c4056925a52d8948ba1c806341ddd534808cd33
+olean  sha256 abf92d1109215daf5b67e7166d0e228b845be21a94d22afc9f07a2aaf1487f72
+started UTC 2026-11-19T08:42:40.270020+00:00
+replaying SparseBoundary.GraphContractionCheck
+PASS SparseBoundary.GraphContractionCheck exit=0 elapsed=0.85s
+[37/147] leanchecker -v SparseBoundary.GraphContractionLayer10
+source sha256 abe817358f67bee92306adeef72e3b671a93b3ed901d7766770d808b344a4681
+olean  sha256 053218f85f07c2149aec06ad18cde08ba338305a35e8314e96b9ceecd38862e0
+started UTC 2026-11-19T09:45:54.340281+00:00
+replaying SparseBoundary.GraphContractionLayer10
+PASS SparseBoundary.GraphContractionLayer10 exit=0 elapsed=0.75s
+[38/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block00
+source sha256 01c46d4f92db60264b4c76183d065fb3d0bfc1ca8a543dccd39deca0cc58ebaf
+olean  sha256 e21f907c02bd852e3b7d451ced5b706483b8e027e85995442e3d62b58df34dcd
+started UTC 2026-11-19T09:45:55.086328+00:00
+replaying SparseBoundary.GraphContractionLayer10Block00
+PASS SparseBoundary.GraphContractionLayer10Block00 exit=0 elapsed=8.37s
+[39/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block01
+source sha256 52cd7c18878bf268d7b73be8ff31f523a57a7bb9aae9827617dfad64aefa3013
+olean  sha256 6a8bdcd04705ba5d9831efe9097f29bfbd20238e7c52b5b8ebc4d251ae4a6bf1
+started UTC 2026-11-19T09:46:03.459099+00:00
+replaying SparseBoundary.GraphContractionLayer10Block01
+PASS SparseBoundary.GraphContractionLayer10Block01 exit=0 elapsed=8.45s
+[40/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block02
+source sha256 cbeb3d03f7d8ae55eb0b7efd95f3905be066f713e58c1b11b11ec58b876b6a94
+olean  sha256 dc934d3a162c15004f0a432de90dbc87b50d925e9297b11dc0b52b85a738c93f
+started UTC 2026-11-19T09:46:11.908045+00:00
+replaying SparseBoundary.GraphContractionLayer10Block02
+PASS SparseBoundary.GraphContractionLayer10Block02 exit=0 elapsed=8.39s
+[41/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block03
+source sha256 ad94d5c78cb77c3c99aa50d917457f4ab73eb3145f58792cc08a54288d34665b
+olean  sha256 bfb65a8995eefe94ee56791d7a04f46ebfb6ea08b215b58389ff7589f97e2080
+started UTC 2026-11-19T09:46:20.297940+00:00
+replaying SparseBoundary.GraphContractionLayer10Block03
+PASS SparseBoundary.GraphContractionLayer10Block03 exit=0 elapsed=8.38s
+[42/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block04
+source sha256 7dce3cd9194ee9a68b6c7b50d7129495f4c98f67c9c278c1a0ed8cf71f248f52
+olean  sha256 fdfb584e02387bb342598dd4a40bf34b4dd8f71d9abd66938b045f7248d84268
+started UTC 2026-11-19T09:46:28.682581+00:00
+replaying SparseBoundary.GraphContractionLayer10Block04
+PASS SparseBoundary.GraphContractionLayer10Block04 exit=0 elapsed=8.44s
+[43/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block05
+source sha256 8a7695bdc464ee9f27d2c2f0219b0c7fdbf584226bc44fe304f5474ef1b1e0b2
+olean  sha256 39bc03211469e44f6bf6e3ae9ef652b9ea5215912c3d03262e1100799ecdeee0
+started UTC 2026-11-19T09:46:37.117725+00:00
+replaying SparseBoundary.GraphContractionLayer10Block05
+PASS SparseBoundary.GraphContractionLayer10Block05 exit=0 elapsed=8.43s
+[44/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block06
+source sha256 1417ba278babc3b65fe9087aeb4b0b52f02087ccd57a8f107aee7c682e8386a8
+olean  sha256 debfd497290ef34c0496be7b1d98d957a865286cfc119061366081deeeb79d3e
+started UTC 2026-11-19T09:46:45.547016+00:00
+replaying SparseBoundary.GraphContractionLayer10Block06
+PASS SparseBoundary.GraphContractionLayer10Block06 exit=0 elapsed=9.02s
+[45/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block07
+source sha256 c5958c7f4802bfe18408b22c955667bb0b1928d61af2c8451d095965d9e9996f
+olean  sha256 d7cc58e498e0659bcdc82d63f9b36ac03167797ca7a953ac0d2897539ca5c2f3
+started UTC 2026-11-19T09:46:54.564331+00:00
+replaying SparseBoundary.GraphContractionLayer10Block07
+PASS SparseBoundary.GraphContractionLayer10Block07 exit=0 elapsed=8.67s
+[46/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block08
+source sha256 d4ca681fe195d8bda7c3b26e29411778d3d0b8c785aa35d771e8e4fcf67013dc
+olean  sha256 5ea77b9c27bd198f6220f9f09aef0b3d0189aec73c6cd00785948a69fcc274da
+started UTC 2026-11-19T09:47:03.229624+00:00
+replaying SparseBoundary.GraphContractionLayer10Block08
+PASS SparseBoundary.GraphContractionLayer10Block08 exit=0 elapsed=8.45s
+[47/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block09
+source sha256 751294861d48220af84283b2a13c2feda5ae48881a5b8d03cd6e1c3740b1d845
+olean  sha256 a26ea6b07a5612e5e6c9fec62e3ee48928445ff60c42bcd5637394b8c544e7b3
+started UTC 2026-11-19T09:47:11.682151+00:00
+replaying SparseBoundary.GraphContractionLayer10Block09
+PASS SparseBoundary.GraphContractionLayer10Block09 exit=0 elapsed=9.00s
+[48/147] leanchecker -v SparseBoundary.GraphContractionLayer10Block10
+source sha256 61c077d64fdd2f59e1f50ca6914189f2131a00f2ae6210f6314dd42317cc6b98
+olean  sha256 93ad5a92cb9c66c447db62da7de19c9092e52c165160c4d5052ced57f1590b55
+started UTC 2026-11-19T09:47:20.679329+00:00
+replaying SparseBoundary.GraphContractionLayer10Block10
+PASS SparseBoundary.GraphContractionLayer10Block10 exit=0 elapsed=2.52s
+[49/147] leanchecker -v SparseBoundary.GraphContractionLayer11
+source sha256 3ffecbc82fdd2a5306878373e9d6c85b08b96621bcd5f1db807beeb63843d950
+olean  sha256 b0036195be3433037b021706785ce9b936aae0d73de2cf63eca2aa31f1885d7f
+started UTC 2026-11-19T09:47:49.751579+00:00
+replaying SparseBoundary.GraphContractionLayer11
+PASS SparseBoundary.GraphContractionLayer11 exit=0 elapsed=0.76s
+[50/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block00
+source sha256 c50f371928f7097e9b0e3121617186e26541f50b8bd0d289b605f8893a6199eb
+olean  sha256 8223f801d20e7dd2504a647b81854968ab7ccc593b25906b512b6b8978a57ffe
+started UTC 2026-11-19T09:47:50.510070+00:00
+replaying SparseBoundary.GraphContractionLayer11Block00
+PASS SparseBoundary.GraphContractionLayer11Block00 exit=0 elapsed=11.57s
+[51/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block01
+source sha256 b4c6327308a18d65d43c5e168c2aa2cd3fd688fccdaaff9aa0abbc5f963f33a4
+olean  sha256 0fd1df9c9f4e012d735f46ee9bbbf4f637525010515f10f91f870b3ff1b8bc7b
+started UTC 2026-11-19T09:48:02.083837+00:00
+replaying SparseBoundary.GraphContractionLayer11Block01
+PASS SparseBoundary.GraphContractionLayer11Block01 exit=0 elapsed=11.70s
+[52/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block02
+source sha256 5e5bd9291c1bd8db6164b9d853ca9d71a46a32d04de6c93fe2364ec9810baf7e
+olean  sha256 ff211dd80959f561b5f468b627e55879b695b92ae8ac5e372f79455f28f0a9ec
+started UTC 2026-11-19T09:48:13.780193+00:00
+replaying SparseBoundary.GraphContractionLayer11Block02
+PASS SparseBoundary.GraphContractionLayer11Block02 exit=0 elapsed=10.84s
+[53/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block03
+source sha256 3be3c23c927481ca31238bc6d938931f95848bee199405d520bad2f70514cf9f
+olean  sha256 65d86de5b34c4af6916a1cc5b1cd5f98c8dd0ef07ab306c107fdc3028350af2c
+started UTC 2026-11-19T09:48:24.615154+00:00
+replaying SparseBoundary.GraphContractionLayer11Block03
+PASS SparseBoundary.GraphContractionLayer11Block03 exit=0 elapsed=10.89s
+[54/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block04
+source sha256 d8afb86b25bc1bd5b22878f2478716ac66f77134b7966d3fa3647067187f49fc
+olean  sha256 023d76dfe1e5eabac1d691456dffb13ad7a35a0ef3d8d23fe3810f5211a3dc16
+started UTC 2026-11-19T09:48:35.502796+00:00
+replaying SparseBoundary.GraphContractionLayer11Block04
+PASS SparseBoundary.GraphContractionLayer11Block04 exit=0 elapsed=10.84s
+[55/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block05
+source sha256 f9529c1f507728cdc2e2a43adcb2669900c3a5f9ed2ea78b7e79cd6611ecfc94
+olean  sha256 03f4ae741688f1f30daab1cb104f053c7dd56e13c28ffb2d136964ac0c08d968
+started UTC 2026-11-19T09:48:46.342174+00:00
+replaying SparseBoundary.GraphContractionLayer11Block05
+PASS SparseBoundary.GraphContractionLayer11Block05 exit=0 elapsed=11.38s
+[56/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block06
+source sha256 58f9aec9df51c4969eba0dbacb615bf00605810a94effa409dcb575825a9e280
+olean  sha256 fcc93f05a4d44eec4b8f971c5a87f0336511bc071f3c478f8dfbf1170f0a44a8
+started UTC 2026-11-19T09:48:57.720093+00:00
+replaying SparseBoundary.GraphContractionLayer11Block06
+PASS SparseBoundary.GraphContractionLayer11Block06 exit=0 elapsed=11.95s
+[57/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block07
+source sha256 a1773539d69c70216468f065ec80c3722e2891efddd41d7cad2e40c00b3617ab
+olean  sha256 a6e726c140c06c10ee3d317930e62ceffd032840988a671b28fa6597b8daa673
+started UTC 2026-11-19T09:49:09.665286+00:00
+replaying SparseBoundary.GraphContractionLayer11Block07
+PASS SparseBoundary.GraphContractionLayer11Block07 exit=0 elapsed=11.38s
+[58/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block08
+source sha256 258f6da8aa0c9de5b6ab15cdffd1f014a9f7d6f3253a1d5e03362d6393f105e9
+olean  sha256 e1fb396a138e7d805a3b8b51e83b2ccb5a8628123690b88de3c2c4e5d2f21a38
+started UTC 2026-11-19T09:49:21.046768+00:00
+replaying SparseBoundary.GraphContractionLayer11Block08
+PASS SparseBoundary.GraphContractionLayer11Block08 exit=0 elapsed=11.30s
+[59/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block09
+source sha256 a9759cd55a26e7356765e246ca48bde6daec2754d4cedcd4246a6ac86e77aeb8
+olean  sha256 c628acdd9a50c73764144851f5c40a7d214fdaabc5a1a165cc67c0c065e8517a
+started UTC 2026-11-19T09:49:32.350760+00:00
+replaying SparseBoundary.GraphContractionLayer11Block09
+PASS SparseBoundary.GraphContractionLayer11Block09 exit=0 elapsed=11.13s
+[60/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block10
+source sha256 fac1b85d7db54be9f85c0dd5734c62b67ffaefd5564a5be156e8afbebb1fae0d
+olean  sha256 4e265afa135087005f6e9e67ac0fb4ac32e0ec3c50b8c1ab0bcde86b985a6bfb
+started UTC 2026-11-19T09:49:43.476518+00:00
+replaying SparseBoundary.GraphContractionLayer11Block10
+PASS SparseBoundary.GraphContractionLayer11Block10 exit=0 elapsed=11.19s
+[61/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block11
+source sha256 af81ce4ddb95bdd400fbf185f8b8f4090226748887095d0525217eb24bd2dcdd
+olean  sha256 13895e9454f4b8c34abb494032491f7487197f809ac0d4f413491ddc1c76bef8
+started UTC 2026-11-19T09:49:54.666760+00:00
+replaying SparseBoundary.GraphContractionLayer11Block11
+PASS SparseBoundary.GraphContractionLayer11Block11 exit=0 elapsed=11.29s
+[62/147] leanchecker -v SparseBoundary.GraphContractionLayer11Block12
+source sha256 c6dca5e71ddb07665b6ec08f81b55b4bad2d72fa88c9aece649419602b146ee3
+olean  sha256 6cf14b0bd5239d8064ec9f437f85a734f025ca6ccfc962fd18fceed48fd1e54e
+started UTC 2026-11-19T09:50:05.954476+00:00
+replaying SparseBoundary.GraphContractionLayer11Block12
+PASS SparseBoundary.GraphContractionLayer11Block12 exit=0 elapsed=10.01s
+[63/147] leanchecker -v SparseBoundary.GraphContractionLayer12
+source sha256 2081b291111dfe06516ff2ef849e7355b021fff209c9fbb78282dc7bbf5f84e9
+olean  sha256 c44bbcac19fda3f1a746b162e2898a5c4ce7e8924c2de2d9e3865b82b017cdc4
+started UTC 2026-11-19T09:50:26.723459+00:00
+replaying SparseBoundary.GraphContractionLayer12
+PASS SparseBoundary.GraphContractionLayer12 exit=0 elapsed=40.73s
+[64/147] leanchecker -v SparseBoundary.GraphContractionLayer13
+source sha256 4c331bae2b55952a48e190f7bf5c6fbbf6261337051b17fc43f8ef93c7f6d4be
+olean  sha256 49dc8cde296897594563572924a8e6ac12073e2ddb5c68d163499812b50130ac
+started UTC 2026-11-19T09:51:07.451883+00:00
+replaying SparseBoundary.GraphContractionLayer13
+PASS SparseBoundary.GraphContractionLayer13 exit=0 elapsed=3.47s
+[65/147] leanchecker -v SparseBoundary.GraphContractionLayer6
+source sha256 5eeaec373ded78065a45bad9de127478895e7c7cea92b436455d42c9c9ae22ae
+olean  sha256 e3fc8e460eaeddc382d073ff45a8878e3731e9e385d610d33ee298d65031cded
+started UTC 2026-11-19T08:42:41.121937+00:00
+replaying SparseBoundary.GraphContractionLayer6
+PASS SparseBoundary.GraphContractionLayer6 exit=0 elapsed=6.92s
+[66/147] leanchecker -v SparseBoundary.GraphContractionLayer7
+source sha256 4be06f3212b7b0352afa926c9461be02687fa16118ac103ea2d7185d63176006
+olean  sha256 2d3834cd9ba033451309bbf35300c44edbaff5c9a057f4782fd60bb5bf4371f3
+started UTC 2026-11-19T08:42:48.043754+00:00
+replaying SparseBoundary.GraphContractionLayer7
+PASS SparseBoundary.GraphContractionLayer7 exit=0 elapsed=1.68s
+[67/147] leanchecker -v SparseBoundary.GraphContractionLayer8
+source sha256 5ee3bf6ed3fa6831e260d96813800ccb4690ed1e159b0b5ba7b66ba5e4794aba
+olean  sha256 eba6c740cf41dce41b739785fe2534383be2ef6cc1b69f200cd5c060939a415e
+started UTC 2026-11-19T08:42:49.722573+00:00
+replaying SparseBoundary.GraphContractionLayer8
+PASS SparseBoundary.GraphContractionLayer8 exit=0 elapsed=5.29s
+[68/147] leanchecker -v SparseBoundary.GraphContractionLayer9
+source sha256 b236c07bd4dec7ed7106db56f8d1c61c67ae119e18b2dccc866f9883c49d1c2c
+olean  sha256 deb5e31e7602ca442a6d45a26350df186ddd234816ed72641313b794c40fac16
+started UTC 2026-11-19T09:02:41.785967+00:00
+replaying SparseBoundary.GraphContractionLayer9
+PASS SparseBoundary.GraphContractionLayer9 exit=0 elapsed=19.79s
+[69/147] leanchecker -v SparseBoundary.GraphDeletion
+source sha256 0528962bade0302016a563f1d5e30d3eb19804f22ad61d3d3aab95035c384695
+olean  sha256 f50b458fc2b032be1577ddb8ba4e54f20df85fc67c9968e80aec76ffea3b2501
+started UTC 2026-11-19T08:42:55.012276+00:00
+replaying SparseBoundary.GraphDeletion
+PASS SparseBoundary.GraphDeletion exit=0 elapsed=0.77s
+[70/147] leanchecker -v SparseBoundary.GraphEightNear
+source sha256 ae8a42d2cf0993df51b56429d61e38fba81115174f784523aeec41c0009b73f8
+olean  sha256 7ceec74a84eff7aba50bdeb8e50d8f5d7578b05765b5d3a4f54dcc3b1c3ecc0c
+started UTC 2026-11-19T08:42:55.781927+00:00
+replaying SparseBoundary.GraphEightNear
+PASS SparseBoundary.GraphEightNear exit=0 elapsed=2.56s
+[71/147] leanchecker -v SparseBoundary.GraphEncoding
+source sha256 282f057092290a7e60f80e8151e67cbcfc269bbe83d66880aace87d1c26b4d42
+olean  sha256 9c17a49bc7fe684ec9fa664565c376d2d6b3cc9407ac71ff6e0a21af73f58fac
+started UTC 2026-11-19T08:42:58.346756+00:00
+replaying SparseBoundary.GraphEncoding
+PASS SparseBoundary.GraphEncoding exit=0 elapsed=0.88s
+[72/147] leanchecker -v SparseBoundary.GraphEnumeration
+source sha256 28e054e3c22348ed0d17110b8b1fb980195bcbc7d654fcf306c7785116506b27
+olean  sha256 1196b74b1fec42c8eedc591d6691ade726daeb437f15fa9ee5a2e67dc541f850
+started UTC 2026-11-19T08:42:59.225425+00:00
+replaying SparseBoundary.GraphEnumeration
+PASS SparseBoundary.GraphEnumeration exit=0 elapsed=1.25s
+[73/147] leanchecker -v SparseBoundary.GraphException
+source sha256 6851affb85548cff0a7d242c2f6b4da92eed1acc51b1bfe23862856a09ab2cbd
+olean  sha256 03065180c0729bb28b414562b445d23166dfd6ac330893ef632a84c65e6c5129
+started UTC 2026-11-19T08:43:00.473325+00:00
+replaying SparseBoundary.GraphException
+PASS SparseBoundary.GraphException exit=0 elapsed=1.51s
+[74/147] leanchecker -v SparseBoundary.GraphFiniteTest
+source sha256 2e93330db6d963ea14d28e6a98918c335ccda2fbdb79225c4bd80668555fb9b1
+olean  sha256 f11178da9631f954574b10951f691370871b85dd30f91606de5de1877d2496fa
+started UTC 2026-11-19T08:43:01.981870+00:00
+replaying SparseBoundary.GraphFiniteTest
+PASS SparseBoundary.GraphFiniteTest exit=0 elapsed=1.24s
+[75/147] leanchecker -v SparseBoundary.GraphFiveCore
+source sha256 5221320655fd2e1b39b58585a9c454bb7a243af94de9a55a5b0649cf0658e681
+olean  sha256 09347e73181f20c26ab7668f40752bb7d24125d7892a568d867a6588614b1ac5
+started UTC 2026-11-19T08:43:03.222830+00:00
+replaying SparseBoundary.GraphFiveCore
+PASS SparseBoundary.GraphFiveCore exit=0 elapsed=1.61s
+[76/147] leanchecker -v SparseBoundary.GraphFiveFiveThree
+source sha256 fe434f6fd01f084f327d7d1f0d08317da9dd794463cb6267f94c263b502a34bd
+olean  sha256 4eed98e0f688c578098086334cb8b0388d182eb864127cc400d10068ef95476e
+started UTC 2026-11-19T08:43:04.837792+00:00
+replaying SparseBoundary.GraphFiveFiveThree
+PASS SparseBoundary.GraphFiveFiveThree exit=0 elapsed=26.19s
+[77/147] leanchecker -v SparseBoundary.GraphFourCone
+source sha256 3341d9c2272a98b01b7e9b471edf1cae9a3f0f64b3c0f6558ae8e7b07c3be569
+olean  sha256 8b96b1a854725a4da0a292517bf95ce02787d2466637c5f31ec8369e8d7f6197
+started UTC 2026-11-19T08:43:31.027338+00:00
+replaying SparseBoundary.GraphFourCone
+PASS SparseBoundary.GraphFourCone exit=0 elapsed=1.96s
+[78/147] leanchecker -v SparseBoundary.GraphFourReduction
+source sha256 867b62b4958db45dc7ebf6097af6363e11b042b973523c031dd73958fc6f86db
+olean  sha256 31964dd9c527a9582e11c7a957bad3838060ad421685a4446efc6e74427100ba
+started UTC 2026-11-19T08:43:32.984886+00:00
+replaying SparseBoundary.GraphFourReduction
+PASS SparseBoundary.GraphFourReduction exit=0 elapsed=1.53s
+[79/147] leanchecker -v SparseBoundary.GraphFourRegularSeven
+source sha256 991b27b9176fb63c69dc82b9fc27df9f958f1d990f8a2c7d9883ac553af20d08
+olean  sha256 9f70bae87ef5e65385ff71cc08b8cd0fa78fb5e3a6e04381557936bbc6c1db9f
+started UTC 2026-11-19T08:43:34.520423+00:00
+replaying SparseBoundary.GraphFourRegularSeven
+PASS SparseBoundary.GraphFourRegularSeven exit=0 elapsed=22.68s
+[80/147] leanchecker -v SparseBoundary.GraphHub
+source sha256 1986574a108b0442f14a39b389f5898e56da9cb58ff7cd352b595425aa5c8d7c
+olean  sha256 3a6e6a2a6d34835e9274b14f30549deff47e8f26304326f9210ae906c819fafc
+started UTC 2026-11-19T08:43:57.200126+00:00
+replaying SparseBoundary.GraphHub
+PASS SparseBoundary.GraphHub exit=0 elapsed=0.93s
+[81/147] leanchecker -v SparseBoundary.GraphMultipartite
+source sha256 6aaf16d37e8ea4190cae45d724537f82b00122c2c761e582f43646658d7e0028
+olean  sha256 e8cc192b0ffac41630c6679c4301de0e54c44de2e22d966c7a6d91f899da5c62
+started UTC 2026-11-19T08:43:58.128646+00:00
+replaying SparseBoundary.GraphMultipartite
+PASS SparseBoundary.GraphMultipartite exit=0 elapsed=0.78s
+[82/147] leanchecker -v SparseBoundary.GraphPairInsertion
+source sha256 4395384e27ed72d5dae4851aba7bd9d60b05e0f3c9d1d72a2f302a96ae931fc8
+olean  sha256 d1520ca8ef0c87df9e3a2d187362996d49c0897600e9028da2749d2095220d6a
+started UTC 2026-11-19T08:43:58.912011+00:00
+replaying SparseBoundary.GraphPairInsertion
+PASS SparseBoundary.GraphPairInsertion exit=0 elapsed=0.74s
+[83/147] leanchecker -v SparseBoundary.GraphPerm
+source sha256 a99bddf2a5e1923ffc5847adb93fb82d7a2eefc6624a5675b2be37f0c438d04b
+olean  sha256 feaf708eda9dea51dc7d8e378f2be6ccf8c90758503c9b7f949ca0bdb93a7a48
+started UTC 2026-11-19T08:43:59.655583+00:00
+replaying SparseBoundary.GraphPerm
+PASS SparseBoundary.GraphPerm exit=0 elapsed=0.83s
+[84/147] leanchecker -v SparseBoundary.GraphPetals
+source sha256 47ddcb96b9e63a5c3ae97b735a4cf48453a4aca4a34f557b39d7ae6cba172188
+olean  sha256 b5a0ecc117861131a974ebf60f9a3ab60c6a6572bfa202309efb0ba755fd3ca8
+started UTC 2026-11-19T08:44:00.483921+00:00
+replaying SparseBoundary.GraphPetals
+PASS SparseBoundary.GraphPetals exit=0 elapsed=0.72s
+[85/147] leanchecker -v SparseBoundary.GraphRootTwo
+source sha256 91e86df072fe45005f689761982547bc01f5053e499c43da9925cfa3de1f1274
+olean  sha256 9cb7b8cbb8c8e8ab894d40e52f7a3386e0f6432f40bec72ea1f264b37935a5cf
+started UTC 2026-11-19T08:44:01.205021+00:00
+replaying SparseBoundary.GraphRootTwo
+PASS SparseBoundary.GraphRootTwo exit=0 elapsed=0.71s
+[86/147] leanchecker -v SparseBoundary.GraphSeries
+source sha256 5e71470500fe1c19b31e6cd2a83b5117eb8a33fca770f33362d7657c1fe5ac2c
+olean  sha256 4f0bde44d7579d631d56c5e5fab6863c4c574d43af3cc4267a16e40144456e45
+started UTC 2026-11-19T08:44:01.920244+00:00
+replaying SparseBoundary.GraphSeries
+PASS SparseBoundary.GraphSeries exit=0 elapsed=0.71s
+[87/147] leanchecker -v SparseBoundary.GraphSixBoundary
+source sha256 d2ef3c3142cf6a06af3732b1c723bfea441234009978422b4c63f0f147b64a36
+olean  sha256 47372eb7afbe1d4749eff79269fb73bac63706677e955b89371dae788a321647
+started UTC 2026-11-19T08:44:02.635454+00:00
+replaying SparseBoundary.GraphSixBoundary
+PASS SparseBoundary.GraphSixBoundary exit=0 elapsed=1.18s
+[88/147] leanchecker -v SparseBoundary.GraphSixClassification
+source sha256 573ed878f35963dc0e5dbec135f10f7c205b991378ecf2a3fc32fef014956770
+olean  sha256 84c204b31b4759b12c0214c695788dd15e31773b350f4fe71fdbbd95fa24e321
+started UTC 2026-11-19T08:44:03.820151+00:00
+replaying SparseBoundary.GraphSixClassification
+PASS SparseBoundary.GraphSixClassification exit=0 elapsed=1.36s
+[89/147] leanchecker -v SparseBoundary.GraphSixCore
+source sha256 3f060843f02776517348ebffd38c4d8aeedade8788484f28feeb7f3959cd2097
+olean  sha256 38f3bb0c52c1ef0c39c3d3a2cfebc296354ac1cc2a22b5e70b8a6842f33a6562
+started UTC 2026-11-19T08:44:05.182905+00:00
+replaying SparseBoundary.GraphSixCore
+PASS SparseBoundary.GraphSixCore exit=0 elapsed=0.94s
+[90/147] leanchecker -v SparseBoundary.GraphSixLower
+source sha256 aff41fcc009223461aa035ecab88e784164bc5596d677d6e130997c55cf10a10
+olean  sha256 e502dc372b9f2c06e9dc0e66f0b291617cebff5c7f039135dd6b0c081b36c0fa
+started UTC 2026-11-19T08:44:06.126198+00:00
+replaying SparseBoundary.GraphSixLower
+PASS SparseBoundary.GraphSixLower exit=0 elapsed=1.11s
+[91/147] leanchecker -v SparseBoundary.GraphSmallBudget
+source sha256 268f592b6005784898da2ce7c6238d59bae2c7646cfd354ae7d62305992f5ee0
+olean  sha256 27da75625374a98abc24a3bfccf30cd1d504c4c17d09c1cfd670fa555b0c0816
+started UTC 2026-11-19T09:51:10.925173+00:00
+replaying SparseBoundary.GraphSmallBudget
+PASS SparseBoundary.GraphSmallBudget exit=0 elapsed=0.96s
+[92/147] leanchecker -v SparseBoundary.GraphSmallBudgetProfiles
+source sha256 c5053736e0c7196570eec59553ccfc99b88c8a61df98d6596e05c1e28a04694d
+olean  sha256 357dda9ae003c7f200bec1acdf254c690054f32dd8bba279d914cdd6f1c9671d
+started UTC 2026-11-19T09:51:11.889494+00:00
+replaying SparseBoundary.GraphSmallBudgetProfiles
+PASS SparseBoundary.GraphSmallBudgetProfiles exit=0 elapsed=3.57s
+[93/147] leanchecker -v SparseBoundary.GraphSmooth
+source sha256 3816e3be08afb84f6071e69f3b299a15937463a60dc08e41dddf66f85cade37a
+olean  sha256 0327cf7d1a8ffa979ee52cbbc6393c7c5288f9f2aa881927d9b77e69900dc145
+started UTC 2026-11-19T08:44:12.369272+00:00
+replaying SparseBoundary.GraphSmooth
+PASS SparseBoundary.GraphSmooth exit=0 elapsed=0.76s
+[94/147] leanchecker -v SparseBoundary.GraphSubdivision
+source sha256 12ad97fe2a8c78549d2e308467e6804370875dd4760012bf0263a37a3ca92dff
+olean  sha256 482778a7990d4558fe5b15a011d6f835715a128185bfe275e8456cbc1fedc93e
+started UTC 2026-11-19T08:44:13.130206+00:00
+replaying SparseBoundary.GraphSubdivision
+PASS SparseBoundary.GraphSubdivision exit=0 elapsed=0.84s
+[95/147] leanchecker -v SparseBoundary.GraphSupports
+source sha256 cc6a885f7905ca3bc4eaa8fde82eccdf72e20935a1e33304f41026dfdb5ced6c
+olean  sha256 6be69a347de72087162fdd8b24d4a7bf697046eca60b51863393f391b4d09c34
+started UTC 2026-11-19T08:44:13.974935+00:00
+replaying SparseBoundary.GraphSupports
+PASS SparseBoundary.GraphSupports exit=0 elapsed=14.38s
+[96/147] leanchecker -v SparseBoundary.GraphThreeSixes
+source sha256 cc7fd12141105591f9676d6c15db237aa4223cbc46799e96fcf6ce4273eb6d1f
+olean  sha256 2d2a30a0d8edee2444b781d04b13ff269f78f8d19195daeb9f417bbac45872e5
+started UTC 2026-11-19T08:44:28.354398+00:00
+replaying SparseBoundary.GraphThreeSixes
+PASS SparseBoundary.GraphThreeSixes exit=0 elapsed=3.14s
+[97/147] leanchecker -v SparseBoundary.GraphTwoIncrements
+source sha256 165395d07f095b1fe586eeb2ae9c2de3a595c862bb7664666c3462a6209589a2
+olean  sha256 13a905d46a7c1d03ab1b1816e49e99a3d97800e9d2ef10113f127206583dc274
+started UTC 2026-11-19T08:44:31.492664+00:00
+replaying SparseBoundary.GraphTwoIncrements
+PASS SparseBoundary.GraphTwoIncrements exit=0 elapsed=0.72s
+[98/147] leanchecker -v SparseBoundary.GraphUnion
+source sha256 f75ebaabbd34a6a9e80dbd5b8e958831d6629d565c23ed497827d43e2209c875
+olean  sha256 e2da340da0c240f998eb429ac0892e90a593b2ea3b1161ea26fa141a6e768a62
+started UTC 2026-11-19T08:44:32.209800+00:00
+replaying SparseBoundary.GraphUnion
+PASS SparseBoundary.GraphUnion exit=0 elapsed=0.76s
+[99/147] leanchecker -v SparseBoundary.GraphUniversalBases
+source sha256 eb9d98d508f2c88891b22d6cf20dc7398b0f6b215d7a674930e1978d651abd48
+olean  sha256 35a587b43f6338998ada2f0f30340f87cecae49ec0618f706c94f07f59af133e
+started UTC 2026-11-19T08:44:32.973921+00:00
+replaying SparseBoundary.GraphUniversalBases
+PASS SparseBoundary.GraphUniversalBases exit=0 elapsed=2.38s
+[100/147] leanchecker -v SparseBoundary.GraphWeighted
+source sha256 6c5d7bbea57de9baa6e128a847e6e825ffd2e626bdd01f6a6aa7a53791633c24
+olean  sha256 5ec8c7adca565f25ed8c6db11766fb922f746ebe76f95a387234c49543b4be38
+started UTC 2026-11-19T08:44:35.352925+00:00
+replaying SparseBoundary.GraphWeighted
+PASS SparseBoundary.GraphWeighted exit=0 elapsed=0.83s
+[101/147] leanchecker -v SparseBoundary.InteriorNear
+source sha256 4fdf27af87719ed6ee852dfc7380fa1f353e370e77dbf247ce543999da5bdbd9
+olean  sha256 3008c9579d915d952386a3b03cc590393b0924473bbcb14c9256eecfb4a80f65
+started UTC 2026-11-19T08:44:36.184397+00:00
+replaying SparseBoundary.InteriorNear
+PASS SparseBoundary.InteriorNear exit=0 elapsed=3.69s
+[102/147] leanchecker -v SparseBoundary.InteriorRepairs
+source sha256 37547e254f3698e1077d9cc0633a5b38fbb6c2ad23c7ae099d4ef000699d0b61
+olean  sha256 c8ca100d8946d277fda87fc3bad7f9071a94b313400ad42bc896eafc60c4927f
+started UTC 2026-11-19T08:44:39.875128+00:00
+replaying SparseBoundary.InteriorRepairs
+PASS SparseBoundary.InteriorRepairs exit=0 elapsed=5.50s
+[103/147] leanchecker -v SparseBoundary.InteriorUniversal
+source sha256 4d1d82c30886be0fb79f74447050e51f1aa1ca378b0ab2b86639f3085d885b2c
+olean  sha256 96f75cc9c2c616a3215b3fde54c1d395f68901c0c161cd1d41cf5795c65d359f
+started UTC 2026-11-19T08:44:45.378267+00:00
+replaying SparseBoundary.InteriorUniversal
+PASS SparseBoundary.InteriorUniversal exit=0 elapsed=0.84s
+[104/147] leanchecker -v SparseBoundary.LargeAssembly
+source sha256 dc6cd7ce6c78948d085c17f3a0721e4d8a64e9707594dc668dc6f7b484a93a21
+olean  sha256 3af5278f802e66d1f02874a9e0af2cf217d092d8ff1ce29d9f011f2f369c32a5
+started UTC 2026-11-19T08:44:46.220537+00:00
+replaying SparseBoundary.LargeAssembly
+PASS SparseBoundary.LargeAssembly exit=0 elapsed=0.96s
+[105/147] leanchecker -v SparseBoundary.LeafLift
+source sha256 1009bb33ba24a71e6561db332ec1f2874f7990697e96d9f23b016f73e6951935
+olean  sha256 0ddad4e1aeb06bbf53876a8eda7c87529f77d794506c89bd403297188a37a6e3
+started UTC 2026-11-19T08:44:47.179169+00:00
+replaying SparseBoundary.LeafLift
+PASS SparseBoundary.LeafLift exit=0 elapsed=0.80s
+[106/147] leanchecker -v SparseBoundary.LeafReduction
+source sha256 c687cb2999015b0ba2a53b1d213737c89ac40ffd3fdca47544059b5737426902
+olean  sha256 06d25ca181a58332472a7274b7cbca69cfb62f4527cf781f5d13bf8101f17c53
+started UTC 2026-11-19T08:44:47.983803+00:00
+replaying SparseBoundary.LeafReduction
+PASS SparseBoundary.LeafReduction exit=0 elapsed=0.83s
+[107/147] leanchecker -v SparseBoundary.LeafRepairs
+source sha256 acdd1ad51b9f1ae925d5c9c17a22f55d0f716a72eaeb099d303ad4950348e9ec
+olean  sha256 4c8ddade48406725c8a296e377e7f08d31bfd9a7b79b7e8ed1d473906c7e9cb5
+started UTC 2026-11-19T08:44:48.812557+00:00
+replaying SparseBoundary.LeafRepairs
+PASS SparseBoundary.LeafRepairs exit=0 elapsed=43.30s
+[108/147] leanchecker -v SparseBoundary.LowerInduction
+source sha256 fef8d79ccc0a2619d7e7496162361b60266fa1e1c45910431f1632d90f6e123c
+olean  sha256 1e331366d6a094d8ad3245c1e4ccb4868c44e6f2858576c7241520e43ca43dff
+started UTC 2026-11-19T08:45:32.117836+00:00
+replaying SparseBoundary.LowerInduction
+PASS SparseBoundary.LowerInduction exit=0 elapsed=0.82s
+[109/147] leanchecker -v SparseBoundary.MinorBits
+source sha256 307a227594f86af0e5b6479911184963c579adccf4217c9ac66982fcbf7bf2ce
+olean  sha256 f8374132b1cd1b7bf98a70495c418b9d590e712cbba2f3c6de3ab1fefecd166d
+started UTC 2026-11-19T08:45:32.934652+00:00
+replaying SparseBoundary.MinorBits
+PASS SparseBoundary.MinorBits exit=0 elapsed=0.77s
+[110/147] leanchecker -v SparseBoundary.MinorGroups
+source sha256 6d32de959431c46524e0a68e00ef4e3c44520f6f6f1daebc743c761e833d1e79
+olean  sha256 175e353af905df004affff8e8acb395108afeb33cef2fadb0a17e60221afc949
+started UTC 2026-11-19T08:45:33.701829+00:00
+replaying SparseBoundary.MinorGroups
+PASS SparseBoundary.MinorGroups exit=0 elapsed=0.76s
+[111/147] leanchecker -v SparseBoundary.MinorSearch
+source sha256 2cc9a5e64f20754d043077b3d7644a278c06f2b6e357855d727c4ec2825f6a9e
+olean  sha256 1e96e10385e586fce592b55b035ebd66b0ebfa01d820b2ffee36eb77194820b3
+started UTC 2026-11-19T08:45:34.461367+00:00
+replaying SparseBoundary.MinorSearch
+PASS SparseBoundary.MinorSearch exit=0 elapsed=0.75s
+[112/147] leanchecker -v SparseBoundary.PairFromTwo
+source sha256 f847baea82015b3f3bb48daaef27e57cbcec7bd01e865ca93b2b38fc7a1eba66
+olean  sha256 a092610db6bada337a464bef664475a0131c345d47b646fd6f34725ad64c7efd
+started UTC 2026-11-19T08:45:35.213181+00:00
+replaying SparseBoundary.PairFromTwo
+PASS SparseBoundary.PairFromTwo exit=0 elapsed=0.74s
+[113/147] leanchecker -v SparseBoundary.Remaining
+source sha256 b0e9b0382970d6b15e2083ced5d0d46ea9285504cc796524d4ec09eb4a386de3
+olean  sha256 ad90e93e6db7a231c9a025c907f8268693c5867b646d57cb8db65d8f7f136ecc
+started UTC 2026-11-19T08:45:35.950299+00:00
+replaying SparseBoundary.Remaining
+PASS SparseBoundary.Remaining exit=0 elapsed=0.89s
+[114/147] leanchecker -v SparseBoundary.Repair1
+source sha256 0001621433e32ffd1febf15cfcd64a0e8a3c321596f99549c0b137cfa91162fd
+olean  sha256 503724b9fc084c5ad3320ab652636c9d5044ac1c8d3a9e5a523efdce2930a21a
+started UTC 2026-11-19T08:45:36.843530+00:00
+replaying SparseBoundary.Repair1
+PASS SparseBoundary.Repair1 exit=0 elapsed=15.15s
+[115/147] leanchecker -v SparseBoundary.Repair2
+source sha256 c636209c27bbd4682463f9816eabc2917002cd1bbc49a50771887db81d465949
+olean  sha256 80cc5366886b7f7a8593c1818d3230d11da6e820958c23bea737659a47e48b81
+started UTC 2026-11-19T08:45:51.998197+00:00
+replaying SparseBoundary.Repair2
+PASS SparseBoundary.Repair2 exit=0 elapsed=12.84s
+[116/147] leanchecker -v SparseBoundary.Repair3
+source sha256 8838ce659356ad75ae654367139ab1bce63595f7542a11bfdb085e33262767c0
+olean  sha256 3dc559247e481d2fbdca05010c1167ce3e0a3d39e7588e0060471983338fbe06
+started UTC 2026-11-19T08:46:04.834845+00:00
+replaying SparseBoundary.Repair3
+PASS SparseBoundary.Repair3 exit=0 elapsed=13.25s
+[117/147] leanchecker -v SparseBoundary.Repair4
+source sha256 f5ebcf2cafba17c2dbd5acd86a315a6b3cb8dd48c830436541a4c5f82cb0cc2e
+olean  sha256 fd60270811a7a56c09dcfd2d512d91a462c744c6dab946eed51e9b86679c6235
+started UTC 2026-11-19T08:46:18.084752+00:00
+replaying SparseBoundary.Repair4
+PASS SparseBoundary.Repair4 exit=0 elapsed=70.97s
+[118/147] leanchecker -v SparseBoundary.Repair5
+source sha256 68d09ee1ea8ee7d09a028d5016b1241e6198cb0a1c2833d6bb59e79dc347b87b
+olean  sha256 0352ffcbc50c88903b5b0ba0af24654951f3e138202b08210ff31776be932653
+started UTC 2026-11-19T08:47:29.057781+00:00
+replaying SparseBoundary.Repair5
+PASS SparseBoundary.Repair5 exit=0 elapsed=50.34s
+[119/147] leanchecker -v SparseBoundary.Repair6
+source sha256 1cc28cc879f3da9dd2629813718daacacc6c799fd6e1cc57e1c480736832aa3c
+olean  sha256 3e8a7950692339edaf73a84b51bf7928a4459b364b5e4a09ff7b430a1c1de216
+started UTC 2026-11-19T08:48:19.396251+00:00
+replaying SparseBoundary.Repair6
+PASS SparseBoundary.Repair6 exit=0 elapsed=57.57s
+[120/147] leanchecker -v SparseBoundary.Repair7
+source sha256 35e31b20b2cf0a2f59221f094f6d8f5090e732d24338668a941b207ed07553d3
+olean  sha256 921416cb3782cba9dcd3c3db161586617c454d7097d15c30bfe8898033ca81d5
+started UTC 2026-11-19T08:49:16.971876+00:00
+replaying SparseBoundary.Repair7
+PASS SparseBoundary.Repair7 exit=0 elapsed=11.69s
+[121/147] leanchecker -v SparseBoundary.RimGrowth
+source sha256 b7bff6cdbd6776ead37a17cf3d5d9d627edc68eafa6038602b9884dc0649986c
+olean  sha256 59672a9770b60dcefa9f447b2a5afa2d23c57662a7336c18d2a46193f337f15e
+started UTC 2026-11-19T08:49:28.664558+00:00
+replaying SparseBoundary.RimGrowth
+PASS SparseBoundary.RimGrowth exit=0 elapsed=0.81s
+[122/147] leanchecker -v SparseBoundary.Rotations
+source sha256 d489f12a65334226d1ffad024b40443011665717cbcf7fc7a90a66c06735e67d
+olean  sha256 c92a6437aab8037802f917a17b6dee6c380c90eec5538a2c3792fd6cdc7fd5d8
+started UTC 2026-11-19T08:49:29.471916+00:00
+replaying SparseBoundary.Rotations
+PASS SparseBoundary.Rotations exit=0 elapsed=1.87s
+[123/147] leanchecker -v SparseBoundary.SevenBoundary
+source sha256 c89fbfc107ef41f311ff00cac7d9c1f91db93b4c1bd776c43d22e059f1caafba
+olean  sha256 54721b9c5bfb1876a3246a88f09bfd8a6b3ee1d1bd2abe81acac42e6e877e3b0
+started UTC 2026-11-19T08:49:31.342337+00:00
+replaying SparseBoundary.SevenBoundary
+PASS SparseBoundary.SevenBoundary exit=0 elapsed=1.96s
+[124/147] leanchecker -v SparseBoundary.SevenCores
+source sha256 6bbf5f8f07df9e3d32cf70b0c25f745884afc2588948f6339d8602c99b269cde
+olean  sha256 f76699f62c36736bf942c09e24d11ff379db0e93c890dcb462bd7bbe2af708b6
+started UTC 2026-11-19T08:49:33.305629+00:00
+replaying SparseBoundary.SevenCores
+PASS SparseBoundary.SevenCores exit=0 elapsed=0.86s
+[125/147] leanchecker -v SparseBoundary.SevenFour
+source sha256 1ff74a764f1c5f5f001b35158296f36093be9f2be90159874bc46e9f57846a20
+olean  sha256 e6b2999da5635a032625a90c27b02952f8fa8526ac06adc1c48c9bf81192d47f
+started UTC 2026-11-19T08:49:34.173627+00:00
+replaying SparseBoundary.SevenFour
+PASS SparseBoundary.SevenFour exit=0 elapsed=3.94s
+[126/147] leanchecker -v SparseBoundary.SevenLowerRepairs
+source sha256 3f825c5062b1ec1098149bc412f36beb6d2e0baa7fb67ce3f2da68beb23b4faa
+olean  sha256 db7f43737a433fb23aafed81c489ea7492d1dce69c249f2c4f2e6dbb0f252fe7
+started UTC 2026-11-19T08:49:38.118044+00:00
+replaying SparseBoundary.SevenLowerRepairs
+PASS SparseBoundary.SevenLowerRepairs exit=0 elapsed=0.86s
+[127/147] leanchecker -v SparseBoundary.SevenOne
+source sha256 3bff040ebdc963165865bec26ca147b4c43e0a45b03d96ac873a7fdc2970ad31
+olean  sha256 1669ae785dac08460ea2883341043fb70a7b4a7801b34052a351b7a2d1aac3b2
+started UTC 2026-11-19T08:49:38.985819+00:00
+replaying SparseBoundary.SevenOne
+PASS SparseBoundary.SevenOne exit=0 elapsed=1.86s
+[128/147] leanchecker -v SparseBoundary.SevenThree
+source sha256 13be3ad8bad1a2f53dd8df270f0cd770443a406c18612398c643ed655b89aac8
+olean  sha256 9d41607c09657d8d6db356678daaac5a5ee9bdb192bcea805bf6a96788c45bdb
+started UTC 2026-11-19T08:49:40.861345+00:00
+replaying SparseBoundary.SevenThree
+PASS SparseBoundary.SevenThree exit=0 elapsed=23.31s
+[129/147] leanchecker -v SparseBoundary.SevenTight
+source sha256 bbd5ec669d21d2ed6e573c1511507db8d8a0f9344dac7aadd81a803eec88a421
+olean  sha256 229df176ca397dbe16025271b4e441be6ca99b8e849b8baa46430c948c1cedca
+started UTC 2026-11-19T08:50:04.169845+00:00
+replaying SparseBoundary.SevenTight
+PASS SparseBoundary.SevenTight exit=0 elapsed=15.07s
+[130/147] leanchecker -v SparseBoundary.SevenTwo
+source sha256 16f600213b93ec1f942a237a73931be5e02c2c738f859fbc73941d962468c025
+olean  sha256 a74b434215e39746cdafe4ac3fa43cf3ec50498d1c851d90beb3814eb9cdb9eb
+started UTC 2026-11-19T08:50:19.246468+00:00
+replaying SparseBoundary.SevenTwo
+PASS SparseBoundary.SevenTwo exit=0 elapsed=1.60s
+[131/147] leanchecker -v SparseBoundary.SevenUniversal
+source sha256 a1ddde0474455bd76332fd72533090050dda49ca7756ea752adeb5d062f8ff09
+olean  sha256 7eb47365915b7ffddcccd248c6cfd51796ed077fbe09c5863b6283cd08589ab2
+started UTC 2026-11-19T08:50:20.844448+00:00
+replaying SparseBoundary.SevenUniversal
+PASS SparseBoundary.SevenUniversal exit=0 elapsed=22.44s
+[132/147] leanchecker -v SparseBoundary.Truncation
+source sha256 e715f14176eab8be0190435cd0a34458edd9c133d9209fdcc8085f60429d2515
+olean  sha256 6256b9050971bf66e8cadf77dd4f47f84d31b5239dc7b81b17f046ec368f69c3
+started UTC 2026-11-19T08:50:43.287208+00:00
+replaying SparseBoundary.Truncation
+PASS SparseBoundary.Truncation exit=0 elapsed=0.76s
+[133/147] leanchecker -v SparseBoundary.TruncationBuild
+source sha256 c5e7d110a425fe33737bebaf6c5226a74b4a5b16c88edbfe69b3a874b725ec30
+olean  sha256 92776628e42c8bf6eb8cdb211aa83196974a8324199c192585a5a0c83230cb6b
+started UTC 2026-11-19T08:50:44.048211+00:00
+replaying SparseBoundary.TruncationBuild
+PASS SparseBoundary.TruncationBuild exit=0 elapsed=0.74s
+[134/147] leanchecker -v SparseBoundary.TruncationData
+source sha256 09dbfb60e58206ef03dfa82483155a992ef49eb5780b49db7e5e7869aa99df32
+olean  sha256 de2181c46738d285b4adec540c34217e3180ce2077c2325d0c368db0cdcfd721
+started UTC 2026-11-19T08:50:44.789535+00:00
+replaying SparseBoundary.TruncationData
+PASS SparseBoundary.TruncationData exit=0 elapsed=0.74s
+[135/147] leanchecker -v SparseBoundary.TruncationProject
+source sha256 91fcbad5ab46644914940e7865cc0c954165ec8e5e520c58338106d83f14a695
+olean  sha256 7892c89f421c52f84a4dd40d6beb2abf83c535fcc1936b773eda56710a1ac9e8
+started UTC 2026-11-19T08:50:45.529027+00:00
+replaying SparseBoundary.TruncationProject
+PASS SparseBoundary.TruncationProject exit=0 elapsed=0.72s
+[136/147] leanchecker -v SparseBoundary.TruncationTags
+source sha256 e456db468da60744e5aaf943eac169d3572e3f09bd2de698a6ff0f552e90e386
+olean  sha256 5e0b1d9435eebebc79cd7d46bcbfc54dd78b246b6363884b5830355124a415a5
+started UTC 2026-11-19T08:50:46.250139+00:00
+replaying SparseBoundary.TruncationTags
+PASS SparseBoundary.TruncationTags exit=0 elapsed=35.04s
+[137/147] leanchecker -v SparseBoundary.UpperLeaf
+source sha256 2efd0410d291a00052797fa827a01bb60e7d4cf1caa77b964cba99cd5c6837f8
+olean  sha256 236eaf62935f9e800df6e9dcb96f6091faf697b67502478b579c363922780153
+started UTC 2026-11-19T08:51:21.288234+00:00
+replaying SparseBoundary.UpperLeaf
+PASS SparseBoundary.UpperLeaf exit=0 elapsed=0.88s
+[138/147] leanchecker -v SparseBoundary.UpperLists
+source sha256 79e3a255293dbcd9ff842d28fe8a4e8ea5a2593fbd544ab09a6d98714fba29aa
+olean  sha256 7aafc552296175097eaf6790c67ef920c80e4317f08ab9ace874865d23ecf065
+started UTC 2026-11-19T08:51:22.166827+00:00
+replaying SparseBoundary.UpperLists
+PASS SparseBoundary.UpperLists exit=0 elapsed=0.83s
+[139/147] leanchecker -v SparseBoundary.ZeroBoundary
+source sha256 939896abb56638caf18940a90e120e5afd679049689d95077d04151ec62d9fd3
+olean  sha256 9a882de19b305b4232fc3403c4c7b58b9ee908a8d923aaf8749354a73e973a24
+started UTC 2026-11-19T08:51:22.994458+00:00
+replaying SparseBoundary.ZeroBoundary
+PASS SparseBoundary.ZeroBoundary exit=0 elapsed=0.85s
+[140/147] leanchecker -v SparseBoundary.ZeroGrowth
+source sha256 4af6123938f76305e522f0c874b3a04365d0083c62082713cd5196c94a478951
+olean  sha256 ee23021558b499e7cb9f073f039e59025aa496f606456031f6642ab6c33415fb
+started UTC 2026-11-19T08:51:23.840497+00:00
+replaying SparseBoundary.ZeroGrowth
+PASS SparseBoundary.ZeroGrowth exit=0 elapsed=0.70s
+[141/147] leanchecker -v SparseBoundary.ZeroMany
+source sha256 71740b0623a22f3f25bad693854a0b9d1e215613e4e97523b2a648f1e1832564
+olean  sha256 d943f2f3f24aaa4852aef400310e9d115a46f4fbbdca6f1e48f9c1731187efb6
+started UTC 2026-11-19T08:51:24.539227+00:00
+replaying SparseBoundary.ZeroMany
+PASS SparseBoundary.ZeroMany exit=0 elapsed=1.13s
+[142/147] leanchecker -v SparseBoundary.ZeroPadding
+source sha256 8008899e4b02a1544753f5de348ffefaa8f281e8a1bd5d65862639e7d8a9c7a6
+olean  sha256 58ec71ae2077246a77883ec2799c8682a7d695d0b1125aa41639b12082daf030
+started UTC 2026-11-19T08:51:25.675390+00:00
+replaying SparseBoundary.ZeroPadding
+PASS SparseBoundary.ZeroPadding exit=0 elapsed=0.75s
+[143/147] leanchecker -v SparseBoundary.ZeroSeeds0
+source sha256 2ea78f0895b28eefb494751730ebca746f40a9b8dda12e92f27f6128805f20db
+olean  sha256 1452d0bacc29257380a37296615752f13ab834c17eee906a3fa8b2e0db17ddc3
+started UTC 2026-11-19T08:51:26.430731+00:00
+replaying SparseBoundary.ZeroSeeds0
+PASS SparseBoundary.ZeroSeeds0 exit=0 elapsed=1.22s
+[144/147] leanchecker -v SparseBoundary.ZeroSeeds1
+source sha256 d512ba545ea7aa971013a49d597bfdcafbdb34a0054e2b2ab2094d6d7a957efb
+olean  sha256 b0b4568075803915a6242ca7082cfdbc7e1101427ec449718fd7187cd7e04737
+started UTC 2026-11-19T08:51:27.652246+00:00
+replaying SparseBoundary.ZeroSeeds1
+PASS SparseBoundary.ZeroSeeds1 exit=0 elapsed=0.97s
+[145/147] leanchecker -v SparseBoundary.ZeroSeeds2
+source sha256 1e2c2f3d6ec0fa8918f5a945c5e62c9323eb601a5604560beda68704492fe061
+olean  sha256 6de22d0b3bd362e9a7131796066e3dc99825e55c64e92cb68b8f9889a0dc9140
+started UTC 2026-11-19T08:51:28.626001+00:00
+replaying SparseBoundary.ZeroSeeds2
+PASS SparseBoundary.ZeroSeeds2 exit=0 elapsed=0.97s
+[146/147] leanchecker -v SparseBoundary.ZeroTruncation
+source sha256 757e14ade98b5236f77f97b1a5c086d2c98e7422be3afa9597815b8e8173aaa7
+olean  sha256 cfdba963efb4dad3c98cb36c30ce2ca5fa24b2f838de91ed214c8709980d46a4
+started UTC 2026-11-19T08:51:29.598883+00:00
+replaying SparseBoundary.ZeroTruncation
+PASS SparseBoundary.ZeroTruncation exit=0 elapsed=0.71s
+[147/147] leanchecker -v SparseBoundary.ZeroTypes
+source sha256 eb8aa8f97b697b8c2beb9bea35a66e80c95b8e40961407a8e3c6854a653bc361
+olean  sha256 834536b1e37bfd2895ee3309b7526cdfdae72e774e341b424e8f514925afbc7d
+started UTC 2026-11-19T08:51:30.308771+00:00
+replaying SparseBoundary.ZeroTypes
+PASS SparseBoundary.ZeroTypes exit=0 elapsed=0.85s
+PASS final import closure: all 147 local modules
+UTC finish 2026-11-19T11:45:46.103500+00:00

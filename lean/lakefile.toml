@@ -1,0 +1,6 @@
+name = "sparse-boundary"
+version = "0.1.0"
+defaultTargets = ["SparseBoundary"]
+
+[[lean_lib]]
+name = "SparseBoundary"

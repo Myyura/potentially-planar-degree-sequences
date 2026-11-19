@@ -1,0 +1,17 @@
+$ lake env lean --version
+Lean (version 4.34.1, arm64-apple-darwin24.6.0, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)
+$ lake env leanchecker -v AtlasEG
+replaying AtlasEG
+PASS AtlasEG
+$ lake env leanchecker -v BoundaryEG
+replaying BoundaryEG
+PASS BoundaryEG
+$ lake env leanchecker -v SparseInterior
+replaying SparseInterior
+PASS SparseInterior
+$ lake env leanchecker -v FullBoundary
+replaying FullBoundary
+PASS FullBoundary
+$ lake env leanchecker -v BoundaryCorollaries
+replaying BoundaryCorollaries
+PASS BoundaryCorollaries
