@@ -1,27 +1,29 @@
 # Planar realizations of graphic sequences at the sparse boundary
 
-This repository contains the Lean 4 proofs accompanying the paper of the same title. For a positive graphic sequence with length $n$, degree sum $S$, and $\ell$ entries equal to one, the first theorem proves that $(4,4,4,4,4,2)$ is the unique sequence without a planar realization when $S\le 4n-2-2\ell$. The second theorem classifies all exceptions when $S=4n-2\ell$.
+Lean 4 formalization accompanying the paper *Planar realizations of graphic sequences at the sparse boundary*.
 
-| Result | Lean declaration |
-| --- | --- |
-| Lower boundary and the entire range below it | `SparseBoundary.first_boundary` |
-| Complete classification on the upper boundary | `SparseBoundary.second_boundary` |
-| Upper boundary with at least eight core vertices | `SparseBoundary.upper_eight_core` |
-| Upper boundary with at least three degree-two vertices | `SparseBoundary.upper_with_three_twos` |
+A degree sequence is *planaric* if some finite simple planar graph realizes it. Let $d$ be a positive graphic sequence of length $n$ and sum $S$, with $\ell$ entries equal to one. Theorem 1 shows that when $S \le 4n-2-2\ell$, the only exception to planar realizability is $(4^5,2)$ (five fours and a two). Theorem 2 classifies all exceptions at the next even sum, $S=4n-2\ell$.
 
-The main theorems and corollaries are proved for finite simple graphs. Planarity is expressed using Wagner's characterization by the two excluded minors. The audit independently restates the hypotheses and exception list and type-checks the two main proofs against those statements. [Main theorems](lean-eg/FullBoundary.lean) · [Corollaries and sharpness examples](lean-eg/BoundaryCorollaries.lean) · [Theorem statements and axiom audit](verification/AuditEG.lean) · [Graph definitions](lean/SparseBoundary/Graph.lean)
+## Main results
 
-## Reproducing the proofs
+Write $p$ for the number of entries at least three and $t$ for the number of twos. Both corollaries concern the upper boundary $S=4n-2\ell$.
 
-Install Git, the Elan toolchain manager and Python 3.9 or later. From the repository root, run the following in a POSIX shell.
+| Paper | Result | Lean declaration | File |
+| --- | --- | --- | --- |
+| Theorem 1 | Unique exception for $S \le 4n-2-2\ell$ | `SparseBoundary.first_boundary` | [FullBoundary.lean](lean-eg/FullBoundary.lean#L88) |
+| Theorem 2 | All exceptions at $S=4n-2\ell$ | `SparseBoundary.second_boundary` | [FullBoundary.lean](lean-eg/FullBoundary.lean#L91) |
+| Corollary 3 | $p \ge 8$ guarantees a planar realization for every $\ell$ | `SparseBoundary.upper_eight_core` | [BoundaryCorollaries.lean](lean-eg/BoundaryCorollaries.lean#L61) |
+| Corollary 4 | For $t \ge 3$, the exceptions are exactly the sequences with $p=5$, or with $p=6$ and exactly three entries equal to three | `SparseBoundary.upper_with_three_twos` | [BoundaryCorollaries.lean](lean-eg/BoundaryCorollaries.lean#L7) |
 
-```sh
-sh verification/verify.sh
-```
+For each $\ell$, [`seven_core_obstruction`](lean-eg/BoundaryCorollaries.lean#L82) gives an exception with $p=7$. The example [`two_twos_sharp`](lean-eg/BoundaryCorollaries.lean#L31) shows why Corollary 4 needs at least three twos.
 
-Elan selects Lean 4.34.1 from the toolchain files. On a first build, allow network access to fetch the toolchain and the dependencies pinned in the Lake manifest. The script builds both projects, checks the theorem statements and axiom dependencies, and replays their compiled declarations through the Lean kernel. Replaying the finite contraction certificates can take substantial time. [Dependency manifest](lean-eg/lake-manifest.json) · [Kernel replay script](verification/replay.py)
+## Building and verifying
 
-For the two classification theorems and the corollaries alone, run the following from the repository root.
+The proofs are split into two Lake projects. [`lean/`](lean/) develops the graph constructions and obstruction proofs using Lean's standard library. Its [definition of planarity](lean/SparseBoundary/Graph.lean) uses Wagner's characterization by the exclusion of $K_5$ and $K_{3,3}$ as minors. [`lean-eg/`](lean-eg/) imports this development and uses the Erdős–Gallai theorem in mathlib's language of simple graphs to finish the classification.
+
+### Quick check
+
+With Git and [Elan](https://github.com/leanprover/elan) installed, start at the repository root. Elan picks up Lean 4.34.1 from the toolchain files. On the first build, Lake fetches the dependencies pinned in [the manifest](lean-eg/lake-manifest.json).
 
 ```sh
 cd lean-eg
@@ -29,8 +31,18 @@ lake build BoundaryCorollaries
 lake env lean ../verification/AuditEG.lean
 ```
 
-The recorded audits list `propext`, `Classical.choice` and `Quot.sound` as the axiom dependencies of the two main theorems. The kernel replay covers 147 modules in the primary project and five in the second project. [Axiom report](verification/axioms-main.log) · [Primary replay](verification/kernel-primary.log) · [Second project replay](verification/kernel-bridge.log)
+[AuditEG.lean](verification/AuditEG.lean) spells out the hypotheses and the full exception list, then checks the two main theorems against those statements. The [axiom report](verification/axioms-main.log) lists `propext`, `Classical.choice`, and `Quot.sound` for both proofs.
 
-## Third-party source
+### Full verification
 
-`lean-eg/AtlasEG.lean` is the ATLAS formalization of the Erdős–Gallai theorem at commit `ced12319d64032bfe32565b312632d28eaf04e3c`. The source retains its copyright notice and is distributed with its upstream license. [Upstream source](https://github.com/Deicyde/atlas-lean/blob/ced12319d64032bfe32565b312632d28eaf04e3c/MathlibExt/Combinatorics/SimpleGraph/ErdosGallai.lean) · [License for AtlasEG.lean](lean-eg/LICENSE.atlas)
+The full check also uses Python 3.9 or later. Run this command from the repository root.
+
+```sh
+sh verification/verify.sh
+```
+
+This builds both projects, runs the audits, and rechecks the compiled declarations with the Lean kernel. The finite contraction certificates take the longest to replay. The [primary replay log](verification/kernel-primary.log) records the 147 modules checked by [replay.py](verification/replay.py). The [bridge replay log](verification/kernel-bridge.log) covers the five modules in `lean-eg/`.
+
+## Third-party code
+
+[AtlasEG.lean](lean-eg/AtlasEG.lean) contains the [ATLAS proof of the Erdős–Gallai theorem](https://github.com/Deicyde/atlas-lean/blob/ced12319d64032bfe32565b312632d28eaf04e3c/MathlibExt/Combinatorics/SimpleGraph/ErdosGallai.lean) at commit `ced12319d64032bfe32565b312632d28eaf04e3c`. It retains the original copyright notice and [upstream license](lean-eg/LICENSE.atlas).
