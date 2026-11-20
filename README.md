@@ -1,6 +1,6 @@
-# Planar realizations of graphic sequences at the sparse boundary
+# Obstructions to planar realizations of sparse graphic sequences
 
-Lean 4 formalization accompanying the paper *Planar realizations of graphic sequences at the sparse boundary*.
+Lean 4 formalization accompanying the paper *Obstructions to planar realizations of sparse graphic sequences*.
 
 A degree sequence is *planaric* if some finite simple planar graph realizes it. Let $d$ be a positive graphic sequence of length $n$ and sum $S$, with $\ell$ entries equal to one. Theorem 1 shows that when $S \le 4n-2-2\ell$, the only exception to planar realizability is $(4^5,2)$ (five fours and a two). Theorem 2 classifies all exceptions at the next even sum, $S=4n-2\ell$.
 
