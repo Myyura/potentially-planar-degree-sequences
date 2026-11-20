@@ -43,6 +43,16 @@ sh verification/verify.sh
 
 This builds both projects, runs the audits, and rechecks the compiled declarations with the Lean kernel. The finite contraction certificates take the longest to replay. The [primary replay log](verification/kernel-primary.log) records the 147 modules checked by [replay.py](verification/replay.py). The [bridge replay log](verification/kernel-bridge.log) covers the five modules in `lean-eg/`.
 
+### Finite check through ten vertices
+
+With NetworkX installed, the following command tests all 4,356 positive graphic degree sequences through order ten in the range of the two theorems.
+
+```sh
+python3 verification/check_sequences.py --max-order 10
+```
+
+For each sequence, the script searches for a planar realization before consulting the classification. Through order ten it finds one exception among 3,290 sequences below the upper boundary and 200 among 1,066 sequences on it.
+
 ## Third-party code
 
 [AtlasEG.lean](lean-eg/AtlasEG.lean) contains the [ATLAS proof of the Erdős–Gallai theorem](https://github.com/Deicyde/atlas-lean/blob/ced12319d64032bfe32565b312632d28eaf04e3c/MathlibExt/Combinatorics/SimpleGraph/ErdosGallai.lean) at commit `ced12319d64032bfe32565b312632d28eaf04e3c`. It retains the original copyright notice and [upstream license](lean-eg/LICENSE.atlas).
