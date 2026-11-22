@@ -1,69 +1,53 @@
 # Potentially planar degree sequences
 
-This repository contains the Lean 4 proofs for two papers on degree sequences of finite simple planar graphs. Both developments use Lean 4.34.1 and share the graph library in [`lean/`](lean/).
+A degree sequence is *potentially planar* if some finite simple planar graph has those vertex degrees. This repository contains Lean 4 proofs for two papers. The first classifies the obstructions at two sparse degree-sum bounds. The second studies recognition for arbitrary degree lists.
 
-| Paper | What the proofs cover | Start here |
+| Paper | Proofs and reproduction | Version cited in the paper |
 | --- | --- | --- |
-| *Obstructions to planar realizations of sparse graphic sequences* | Two sharp degree-sum classifications and their exceptional sequences | [Theorems and build instructions](#obstructions-to-planar-realizations-of-sparse-graphic-sequences) · [Version cited in the sparse paper](https://github.com/Myyura/sparse-planar-degree-sequences/tree/d7c9d0d15e1361f143fb2fae0ae3a383131c308f) |
-| *The complexity of recognizing potentially planar degree sequences* | Hardness at the Euler bound, a constructive recognition algorithm, and structural criteria | [Theorem index and build instructions](recognition-complexity-paper/README.md) · [Source checksums](recognition-complexity-paper/verification/lean-sources.sha256) |
+| *Obstructions to planar realizations of sparse graphic sequences* | [Theorem statements and build guide](sparse-boundary-paper/README.md) | [`d7c9d0d15e13`](https://github.com/Myyura/potentially-planar-degree-sequences/tree/d7c9d0d15e1361f143fb2fae0ae3a383131c308f) |
+| *The complexity of recognizing potentially planar degree sequences* | [Theorem statements and build guide](recognition-complexity-paper/README.md) | [`491655549ad0`](https://github.com/Myyura/potentially-planar-degree-sequences/tree/491655549ad01b4058436be445733945655da14b/recognition-complexity-paper) |
 
-The sparse paper uses the original `lean/`, `lean-eg/`, and `verification/` directories. The recognition paper has its own [Lean projects and verification records](recognition-complexity-paper/). Its lockfiles refer to `sparse-boundary-paper/lean`, a relative symbolic link to the shared `lean/` directory. Clone with symbolic links enabled to reproduce both builds from the same checkout.
+<a id="main-results"></a>
 
 ## Obstructions to planar realizations of sparse graphic sequences
 
-Lean 4 formalization accompanying the paper *Obstructions to planar realizations of sparse graphic sequences*.
+Let $d$ be a nonempty positive graphic sequence of length $n$ and sum $S$, with $\ell$ entries equal to one.
 
-A degree sequence is *planaric* if some finite simple planar graph realizes it. Let $d$ be a positive graphic sequence of length $n$ and sum $S$, with $\ell$ entries equal to one. Theorem 1 shows that when $S \le 4n-2-2\ell$, the only exception to planar realizability is $(4^5,2)$ (five fours and a two). Theorem 2 classifies all exceptions at the next even sum, $S=4n-2\ell$.
+- **Theorems 1–2.** If $S\le 4n-2-2\ell$, every such sequence has a planar realization except $(4,4,4,4,4,2)$. At the next even sum, $S=4n-2\ell$, Theorem 2 gives the complete list of obstructions. [Classification](lean-eg/FullBoundary.lean) · [Full exception list](verification/AuditEG.lean)
+- **Corollaries 3–4.** At $S=4n-2\ell$, write $p$ for the number of entries at least three. Every sequence with $p\ge8$ admits a planar realization, and for each leaf count $\ell$ there is an exception with $p=7$. If at least three entries equal two, the obstructions are exactly the sequences with $p=5$, or with $p=6$ and precisely three entries equal to three. [Corollaries and sharpness examples](lean-eg/BoundaryCorollaries.lean)
 
-## Main results
+## The complexity of recognizing potentially planar degree sequences
 
-Write $p$ for the number of entries at least three and $t$ for the number of twos. Both corollaries concern the upper boundary $S=4n-2\ell$.
-
-| Paper | Result | Lean declaration | File |
-| --- | --- | --- | --- |
-| Theorem 1 | Unique exception for $S \le 4n-2-2\ell$ | `SparseBoundary.first_boundary` | [FullBoundary.lean](lean-eg/FullBoundary.lean#L88) |
-| Theorem 2 | All exceptions at $S=4n-2\ell$ | `SparseBoundary.second_boundary` | [FullBoundary.lean](lean-eg/FullBoundary.lean#L91) |
-| Corollary 3 | $p \ge 8$ guarantees a planar realization for every $\ell$ | `SparseBoundary.upper_eight_core` | [BoundaryCorollaries.lean](lean-eg/BoundaryCorollaries.lean#L61) |
-| Corollary 4 | For $t \ge 3$, the exceptions are exactly the sequences with $p=5$, or with $p=6$ and exactly three entries equal to three | `SparseBoundary.upper_with_three_twos` | [BoundaryCorollaries.lean](lean-eg/BoundaryCorollaries.lean#L7) |
-
-For each $\ell$, [`seven_core_obstruction`](lean-eg/BoundaryCorollaries.lean#L82) gives an exception with $p=7$. The example [`two_twos_sharp`](lean-eg/BoundaryCorollaries.lean#L31) shows why Corollary 4 needs at least three twos.
+- **Theorem 1.** Recognition is strongly NP-complete even when $n\ge4$, every degree is at least three, and the sum is $6n-12$. Every output of the reduction admits a 3-connected simple realization. Each positive output has a stacked triangulation realization. Corollaries 6–7 extend hardness to recognition for maximal planar graphs, planar 3-trees and complete face-size lists of simple convex 3-polytopes. [Reduction](recognition-complexity-paper/lean-wagner/HardnessResult.lean) · [Unary encoding](recognition-complexity-paper/lean-wagner/UnaryHardness.lean)
+- **Theorem 2 and Corollary 10.** For an explicitly listed input of $n$ degrees and bit length $L$, a deterministic algorithm decides realizability in $O(L)+2^{O(\sqrt n)}$ time. On a positive input it constructs a planar realization on the input labels within the same bound. All realizable degree multisets of order $n$ can be listed once each in $2^{O(\sqrt n)}$ total time. Their number, $2^{\Theta(\sqrt n)}$, gives a matching lower bound for enumeration. A matching lower bound for deciding one list remains open. [Labelled construction](recognition-complexity-paper/lean-wagner/WireOutput.lean) · [Enumeration](recognition-complexity-paper/lean-wagner/ListingResult.lean)
+- **Theorems 11–13.** A list has a planar realization exactly when ordered interval moves can consume its positive entries and leave an empty row. For stacked triangulations, a recurrence distributes the entries among the four faces of a tetrahedron and gives a polynomial-time test when the number of distinct degrees is fixed. The appendix gives an arithmetic criterion using a finite difference of a determinant polynomial. [Interval moves](recognition-complexity-paper/lean-wagner/RowRecognition.lean) · [Stacked triangulations](recognition-complexity-paper/lean-wagner/StackedTableResult.lean) · [Arithmetic criterion](recognition-complexity-paper/lean-wagner/TraceDeterminant.lean)
 
 ## Building and verifying
 
-The proofs are split into two Lake projects. [`lean/`](lean/) develops the graph constructions and obstruction proofs using Lean's standard library. Its [definition of planarity](lean/SparseBoundary/Graph.lean) uses Wagner's characterization by the exclusion of $K_5$ and $K_{3,3}$ as minors. [`lean-eg/`](lean-eg/) imports this development and uses the Erdős–Gallai theorem in mathlib's language of simple graphs to finish the classification.
+Both developments use Lean 4.34.1 and share the graph library in [lean/](lean/). Install [elan](https://github.com/leanprover/elan) and start at the repository root. Preserve the symbolic link `sparse-boundary-paper/lean` when cloning. Lake uses the toolchain and dependency revisions recorded in each project.
 
-### Quick check
+<a id="quick-check"></a>
 
-With Git and [Elan](https://github.com/leanprover/elan) installed, start at the repository root. Elan picks up Lean 4.34.1 from the toolchain files. On the first build, Lake fetches the dependencies pinned in [the manifest](lean-eg/lake-manifest.json).
-
-```sh
-cd lean-eg
-lake build BoundaryCorollaries
-lake env lean ../verification/AuditEG.lean
-```
-
-[AuditEG.lean](verification/AuditEG.lean) spells out the hypotheses and the full exception list, then checks the two main theorems against those statements. The [axiom report](verification/axioms-main.log) lists `propext`, `Classical.choice`, and `Quot.sound` for both proofs.
-
-### Full verification
-
-The full check also uses Python 3.9 or later. Run this command from the repository root.
+**Sparse classification.** To build the classification and check the formal statements against the paper, run
 
 ```sh
-sh verification/verify.sh
+(cd lean-eg && lake build BoundaryCorollaries && lake env lean ../verification/AuditEG.lean)
 ```
 
-This builds both projects, runs the audits, and rechecks the compiled declarations with the Lean kernel. The finite contraction certificates take the longest to replay. The [primary replay log](verification/kernel-primary.log) records the 147 modules checked by [replay.py](verification/replay.py). The [bridge replay log](verification/kernel-bridge.log) covers the five modules in `lean-eg/`.
+<a id="full-verification"></a>
+<a id="finite-check-through-ten-vertices"></a>
 
-### Finite check through ten vertices
+The full verification uses `sh verification/verify.sh`. An independent finite search covers all 4,356 positive graphic degree multisets through order ten in the two stated ranges. [Build, kernel replay and finite search](sparse-boundary-paper/README.md#building-and-verifying) · [Scope of the sparse proofs](verification/STATUS.md)
 
-With NetworkX installed, the following command tests all 4,356 positive graphic degree sequences through order ten in the range of the two theorems.
+**General recognition.** To build both projects and reproduce the declaration audits, run
 
 ```sh
-python3 verification/check_sequences.py --max-order 10
+(cd recognition-complexity-paper/lean && lake build && lake env lean Audit.lean)
+(cd recognition-complexity-paper/lean-wagner && lake exe cache get && lake build && lake env lean Audit.lean)
 ```
 
-For each sequence, the script searches for a planar realization before consulting the classification. Through order ten it finds one exception among 3,290 sequences below the upper boundary and 200 among 1,066 sequences on it.
+The recorded run audits 467 declarations and replays 29 compiled modules. The theorem index identifies external inputs, including the cost-weight separator for completeness of the search, canonical ordering for the interval criterion, and the weighted matrix-tree theorem for the determinant criterion. [Verification and source checksums](recognition-complexity-paper/README.md#reproduce-the-verification) · [Scope of the recognition proofs](recognition-complexity-paper/README.md#imported-results-and-hypotheses)
 
 ## Third-party code
 
-[AtlasEG.lean](lean-eg/AtlasEG.lean) contains the [ATLAS proof of the Erdős–Gallai theorem](https://github.com/Deicyde/atlas-lean/blob/ced12319d64032bfe32565b312632d28eaf04e3c/MathlibExt/Combinatorics/SimpleGraph/ErdosGallai.lean) at commit `ced12319d64032bfe32565b312632d28eaf04e3c`. It retains the original copyright notice and [upstream license](lean-eg/LICENSE.atlas).
+The sparse project includes the ATLAS proof of the Erdős–Gallai theorem. The recognition project includes the Wagner formalization by Juan Pablo Traverso Gianini and the hardness reductions by Dominik Peters. [ATLAS source and license](sparse-boundary-paper/README.md#third-party-code) · [Recognition dependencies and licenses](recognition-complexity-paper/THIRD_PARTY.md)

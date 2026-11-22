@@ -2,6 +2,8 @@
 
 Lean 4 sources for the paper of the same title. A degree list is potentially planar if some simple planar graph realizes it. The paper proves NP-completeness at degree sum $6n-12$ and gives a deterministic algorithm that constructs a labelled realization in $O(L)+2^{O(\sqrt n)}$ time for an explicit input of $L$ bits and $n$ entries.
 
+[Overview of both papers](../README.md)
+
 ## Reproduce the verification
 
 Run the commands below from the Git repository root. Install [elan](https://github.com/leanprover/elan) to obtain the pinned Lean 4.34.1 toolchain and Lake. The first bridge build needs internet access for the mathlib revision and its recorded dependencies, or a local copy of those dependencies. The core package uses the included sparse-boundary package through a relative Lake dependency. Keep the three source directories in their recorded positions.
