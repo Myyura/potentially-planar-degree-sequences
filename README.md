@@ -1,4 +1,15 @@
-# Obstructions to planar realizations of sparse graphic sequences
+# Potentially planar degree sequences
+
+This repository contains the Lean 4 proofs for two papers on degree sequences of finite simple planar graphs. Both developments use Lean 4.34.1 and share the graph library in [`lean/`](lean/).
+
+| Paper | What the proofs cover | Start here |
+| --- | --- | --- |
+| *Obstructions to planar realizations of sparse graphic sequences* | Two sharp degree-sum classifications and their exceptional sequences | [Theorems and build instructions](#obstructions-to-planar-realizations-of-sparse-graphic-sequences) · [Version cited in the sparse paper](https://github.com/Myyura/sparse-planar-degree-sequences/tree/d7c9d0d15e1361f143fb2fae0ae3a383131c308f) |
+| *The complexity of recognizing potentially planar degree sequences* | Hardness at the Euler bound, a constructive recognition algorithm, and structural criteria | [Theorem index and build instructions](recognition-complexity-paper/README.md) · [Source checksums](recognition-complexity-paper/verification/lean-sources.sha256) |
+
+The sparse paper uses the original `lean/`, `lean-eg/`, and `verification/` directories. The recognition paper has its own [Lean projects and verification records](recognition-complexity-paper/). Its lockfiles refer to `sparse-boundary-paper/lean`, a relative symbolic link to the shared `lean/` directory. Clone with symbolic links enabled to reproduce both builds from the same checkout.
+
+## Obstructions to planar realizations of sparse graphic sequences
 
 Lean 4 formalization accompanying the paper *Obstructions to planar realizations of sparse graphic sequences*.
 

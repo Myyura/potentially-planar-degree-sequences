@@ -1,0 +1,13 @@
+{"version": "1.2.0",
+ "packagesDir": ".lake/packages",
+ "packages":
+ [{"type": "path",
+   "scope": "",
+   "name": "«sparse-boundary»",
+   "manifestFile": "lake-manifest.json",
+   "inherited": false,
+   "dir": "../../sparse-boundary-paper/lean",
+   "configFile": "lakefile.toml"}],
+ "name": "«recognition-complexity»",
+ "lakeDir": ".lake",
+ "fixedToolchain": false}

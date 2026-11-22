@@ -1,0 +1,50 @@
+name = "recognition-complexity"
+version = "0.1.0"
+defaultTargets = ["Recognition"]
+
+[[require]]
+name = "sparse-boundary"
+path = "../../sparse-boundary-paper/lean"
+
+[[lean_lib]]
+name = "Recognition"
+roots = [
+  "Certificate",
+  "ComplexityCost",
+  "Connectivity",
+  "Enumeration",
+  "Examples",
+  "Fallback",
+  "Frontier",
+  "FrontierStep",
+  "MapCode",
+  "Outline",
+  "Overlay",
+  "Promise",
+  "Recognition",
+  "Reduction",
+  "Rotation",
+  "SourceConverse",
+  "SourceMap",
+  "StackedGraph",
+  "StackedReduction",
+  "Topology",
+  "TraceCheck",
+  "Transfer",
+  "Triangulation.BipartiteMinor",
+  "Triangulation.Cover",
+  "Triangulation.FaceCapacity",
+  "Triangulation.FaceTests",
+  "Triangulation.Forward",
+  "Triangulation.HardnessConverse",
+  "Triangulation.Layers",
+  "Triangulation.Provenance",
+  "Triangulation.Rigidity",
+  "Triangulation.SourceBridge",
+  "Triangulation.StackedMinor",
+  "Triangulation.Stacking",
+  "Triangulation.Tetrahedron",
+  "Triangulation.Tricolor",
+  "Wire",
+  "Witness"
+]
