@@ -1,0 +1,6 @@
+name = "disk-fullerene-verification"
+version = "0.1.0"
+defaultTargets = ["DiskFullerene"]
+
+[[lean_lib]]
+name = "DiskFullerene"

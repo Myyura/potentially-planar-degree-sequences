@@ -1,6 +1,6 @@
 # Potentially planar degree sequences
 
-A degree sequence is *potentially planar* if some finite simple planar graph has those vertex degrees. This repository contains Lean 4 proofs for two papers. The first classifies the obstructions at two sparse degree-sum bounds. The second studies recognition for arbitrary degree lists.
+A degree sequence is *potentially planar* if some finite simple planar graph has those vertex degrees. The two papers listed below classify the obstructions at two sparse degree-sum bounds and study recognition for arbitrary degree lists. The repository also archives a standalone [Lean proof for three-connected disk-fullerenes](disk-fullerene-paper/lean/README.md).
 
 | Paper | Proofs and reproduction | Version cited in the paper |
 | --- | --- | --- |
