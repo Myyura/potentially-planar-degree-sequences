@@ -1,0 +1,39 @@
+import RecognizingPotentiallyPlanarDegreeSequences
+
+/-! Selected declarations from *Recognizing potentially planar degree sequences*. -/
+
+#print axioms Recognition.HardnessResult.restricted
+#print axioms Recognition.UnaryHardness.reduction
+#print axioms Recognition.WireOutput.accepts
+#print axioms Recognition.WireOutput.sound
+#print axioms Recognition.WireOutput.cost
+#print axioms Recognition.RowRecognition.interval_iff
+#print axioms Recognition.MidpointResult.no_affine_characterization
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.MidpointRepair.minimum_is_one
+#print axioms Recognition.TraceDeterminant.criterion
+#print axioms SparseBoundary.first_boundary
+#print axioms SparseBoundary.second_boundary_invariant
+#print axioms SparseBoundary.upper_eight_core
+#print axioms SparseBoundary.seven_core_obstruction
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.Budget.maximal_core_minimum_le
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.Support.Multi.support_minimum_formula
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.Support.Multi.excess_leaves
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.Spectrum.fixed_order_spectrum
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.Spectrum.symmetric_minimum
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.Extremal.maximum_and_bounds
+#print axioms Recognition.StackedTable.run_iff
+#print axioms Recognition.StackedTable.fixed_types
+#print axioms Recognition.ListingResult.membership
+#print axioms Recognition.ListingResult.no_duplicates
+#print axioms Recognition.ListingResult.runtime
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedCut.max_cut_flip
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedForward.planar_matching
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedBudget.core_graphic
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedBudget.core_valid
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedBudget.at_budget_iff
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedBudget.within_budget_iff
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedBudget.yes_minimum
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedVerifier.polynomial_verifier
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedComplexity.promised
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedComplexity.linear_order
+#print axioms RecognizingPotentiallyPlanarDegreeSequences.FixedComplexity.strong_np_complete

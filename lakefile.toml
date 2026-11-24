@@ -1,15 +1,15 @@
 name = "planarDegreeSequences"
 version = "0.1.0"
-defaultTargets = ["Combined"]
+defaultTargets = ["RecognizingPotentiallyPlanarDegreeSequences"]
 
 [[require]]
 name = "sparseEgBridge"
-path = "lean-eg"
+path = "recognizing-potentially-planar-degree-sequences/sparse"
 
 [[require]]
 name = "wagnerBridge"
-path = "recognition-complexity-paper/lean-wagner"
+path = "recognizing-potentially-planar-degree-sequences/planarity"
 
 [[lean_lib]]
-name = "Combined"
-srcDir = "combined"
+name = "RecognizingPotentiallyPlanarDegreeSequences"
+srcDir = "recognizing-potentially-planar-degree-sequences"

@@ -1,0 +1,9 @@
+import SparseBoundary
+import Recognition
+import WagnerBridge
+import RecognizingPotentiallyPlanarDegreeSequences.MidpointRepair
+import RecognizingPotentiallyPlanarDegreeSequences.Support
+import RecognizingPotentiallyPlanarDegreeSequences.Extremal
+import RecognizingPotentiallyPlanarDegreeSequences.FixedComplexity
+
+/-! Lean companion to *Recognizing potentially planar degree sequences*. -/
