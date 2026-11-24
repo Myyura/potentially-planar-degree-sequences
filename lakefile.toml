@@ -1,0 +1,15 @@
+name = "planarDegreeSequences"
+version = "0.1.0"
+defaultTargets = ["Combined"]
+
+[[require]]
+name = "sparseEgBridge"
+path = "lean-eg"
+
+[[require]]
+name = "wagnerBridge"
+path = "recognition-complexity-paper/lean-wagner"
+
+[[lean_lib]]
+name = "Combined"
+srcDir = "combined"
